@@ -1,0 +1,33 @@
+.applications{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:90%;
+    margin:10vh auto;
+}
+
+.appCard {
+    position: relative;
+    width: 48%;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.description {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: white;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.appCard img {
+    width: 100%
+}
+
+.appCard:first-child(){
+    width: 100%;
+    height: 20vh; 
+}

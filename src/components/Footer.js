@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLinkedin, FaGithub, FaStackOverflow } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineMail, HiFolderDownload } from "react-icons/hi";
 
 function Footer() {
   return (
@@ -36,6 +36,14 @@ function Footer() {
             href="/"
           >
             Email <HiOutlineMail size={30} />
+          </a>
+        </li>
+        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
+          <a
+            className="flex justify-between items-center w-full text-gray-300"
+            href="/"
+          >
+            Resume <HiFolderDownload size={30} />
           </a>
         </li>
       </ul>
