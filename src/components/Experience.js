@@ -14,11 +14,62 @@ const Experience = () => {
 
   const handleMouseOver = (id) => {
     setIsHoveringID(id);
-  }
+  };
 
   const handleMouseOut = () => {
     setIsHoveringID(undefined);
-  }
+  };
+
+  const logos = [
+    {
+      id: 1,
+      src: CssLogo,
+      alt: "Css Logo",
+      hoverContent: "CSS",
+    },
+    {
+      id: 2,
+      src: HtmlLogo,
+      alt: "HTML Logo",
+      hoverContent: "HTML",
+    },
+    {
+      id: 3,
+      src: JavaScriptLogo,
+      alt: "JS Logo",
+      hoverContent: "Javascript",
+    },
+    {
+      id: 4,
+      src: MongoLogo,
+      alt: "Mongo Logo",
+      hoverContent: "MongoDB",
+    },
+    {
+      id: 5,
+      src: MysqlLogo,
+      alt: "MySql Logo",
+      hoverContent: "MySQL",
+    },
+    {
+      id: 6,
+      src: NodeLogo,
+      alt: "Node Logo",
+      hoverContent: "Node JS",
+    },
+    {
+      id: 7,
+      src: ReactLogo,
+      alt: "React Logo",
+      hoverContent: "React",
+    },
+    {
+      id: 8,
+      src: TailwindLogo,
+      alt: "Tailwind Logo",
+      hoverContent: "Tailwind CSS",
+    },
+  ];
 
   return (
     <div
@@ -33,86 +84,22 @@ const Experience = () => {
           <p className="py-4">Technologies I have worked with</p>
         </div>
         <div className="w-full space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img
-              onMouseOver={() => handleMouseOver(1)}
-              onMouseOut={handleMouseOut}
-              className="w-20 mx-auto"
-              src={CssLogo}
-              alt="Css Logo"
-            />
-            {hoveringID === 1 ? <p className="font-bold">CSS</p> : ""}
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img
-              onMouseOver={() => handleMouseOver(2)}
-              onMouseOut={handleMouseOut}
-              className="w-20 mx-auto"
-              src={HtmlLogo}
-              alt="HTML logo"
-            />
-            {hoveringID === 2 ? <p className="font-bold">HTML</p> : ""}
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img
-              onMouseOver={() => handleMouseOver(3)}
-              onMouseOut={handleMouseOut}
-              className="w-20 mx-auto"
-              src={JavaScriptLogo}
-              alt="Js Logo"
-            />
-            {hoveringID === 3 ? <p className="font-bold">JavaScript</p> : ""}
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img
-              onMouseOver={() => handleMouseOver(4)}
-              onMouseOut={handleMouseOut}
-              className="w-20 mx-auto"
-              src={MongoLogo}
-              alt="Mongo Logo"
-            />
-            {hoveringID === 4 ? <p className="font-bold">Mongo DB</p> : ""}
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img
-              onMouseOver={() => handleMouseOver(5)}
-              onMouseOut={handleMouseOut}
-              className="w-20 mx-auto"
-              src={MysqlLogo}
-              alt="Mysql Logo"
-            />
-            {hoveringID === 5 ? <p className="font-bold">MySQL</p> : ""}
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img
-              onMouseOver={() => handleMouseOver(6)}
-              onMouseOut={handleMouseOut}
-              className="w-20 mx-auto"
-              src={NodeLogo}
-              alt="Node Logo"
-            />
-            {hoveringID === 6 ? <p className="font-bold">Node JS</p> : ""}
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img
-              onMouseOver={() => handleMouseOver(7)}
-              onMouseOut={handleMouseOut}
-              className="w-20 mx-auto"
-              src={ReactLogo}
-              alt="React Logo"
-            />
-            {hoveringID === 7 ? <p className="font-bold">React</p> : ""}
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-200">
-            <img
-              onMouseOver={() => handleMouseOver(8)}
-              onMouseOut={handleMouseOut}
-              className="w-20 mx-auto"
-              src={TailwindLogo}
-              alt="Tailwind Logo"
-            />
-            {hoveringID === 8 ? <p className="font-bold">Tailwind CSS</p> : ""}
-          </div>
+          {logos.map((logo) => (
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img
+                onMouseOver={() => handleMouseOver(logo.id)}
+                onMouseOut={handleMouseOut}
+                className="w-20 mx-auto"
+                src={logo.src}
+                alt={logo.alt}
+              />
+              {hoveringID === logo.id ? (
+                <p className="font-bold">{logo.hoverContent}</p>
+              ) : (
+                ""
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
