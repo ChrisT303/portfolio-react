@@ -2,7 +2,7 @@
     {
         "key":1,
         "name": "App1",
-        "img": "https://picsum.photos/200/200",
+        "img": "https://picsum.photos/381/200",
         "desc": "This is an application",
         "github": "https://github.com",
         "website":"www.google.com"
@@ -10,7 +10,7 @@
     {
         "key":2,
         "name": "App2",
-        "img": "https://picsum.photos/200/200",
+        "img": "https://picsum.photos/381/200",
         "desc": "This is an application",
         "github": "https://github.com",
         "website":"www.google.com"
@@ -18,7 +18,7 @@
     {
         "key":3,
         "name": "App3",
-        "img": "https://picsum.photos/200/200",
+        "img": "https://picsum.photos/381/200",
         "desc": "This is an application",
         "github": "https://github.com",
         "website":"www.google.com"
@@ -26,7 +26,7 @@
     {
         "key":4,
         "name": "App4",
-        "img": "https://picsum.photos/200/200",
+        "img": "https://picsum.photos/381/200",
         "desc": "This is an application",
         "github": "https://github.com",
         "website":"www.google.com"
@@ -34,7 +34,7 @@
     {
         "key":5,
         "name": "App5",
-        "img": "https://picsum.photos/200/200",
+        "img": "https://picsum.photos/381/200",
         "desc": "This is an application",
         "github": "https://github.com",
         "website":"www.google.com"
@@ -42,7 +42,7 @@
     {
         "key":6,
         "name": "App6",
-        "img": "https://picsum.photos/200/200",
+        "img": "https://picsum.photos/381/200",
         "desc": "This is an application",
         "github": "https://github.com",
         "website":"www.google.com"
