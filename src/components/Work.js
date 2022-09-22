@@ -1,5 +1,7 @@
 import applications from "../data/ProjectData";
 
+import { HiOutlineLink } from "react-icons/hi";
+
 
 const Work = () => (
   <div className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
@@ -18,7 +20,7 @@ const Work = () => (
                 <h2 className="text-center">{app.name}</h2>
                 <h4 className="font-bold text-black text-center">{app.desc}</h4>
                 <a className="info" href={app.link}>
-                  <h3 className="text-center">Link Here</h3>
+                  <h3 className="flex justify-center"><HiOutlineLink/></h3>
                 </a>
               </div>
             </div>
