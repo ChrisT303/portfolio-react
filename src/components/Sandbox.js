@@ -1,7 +1,5 @@
-import applications from "../data/ProjectData";
+/* eslint-disable no-undef */
 
-
-const Work = () => (
   <div className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
     <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
       <div className="pb-8">
@@ -12,13 +10,13 @@ const Work = () => (
       <div className="grid mx-auto sm:grid-cols-2 md:grid-cols-3 gap-4">
         {applications.map((app) => (
           <div key={app.key}>
-            <div className="hovereffect">
+            <div className={"sm" ? "hidden" : "hovereffect"}>
               <img src={app.src} alt="{app.name}" />
-              <div className="overlay">
-                <h2 className="text-center">{app.name}</h2>
-                <h4 className="font-bold text-black text-center">{app.desc}</h4>
+              <div className="md:text-center overlay">
+                <h2>{app.name}</h2>
+                <h4 className="font-bold text-black">{app.desc}</h4>
                 <a className="info" href={app.link}>
-                  <h3 className="text-center">Link Here</h3>
+                  Link Here
                 </a>
               </div>
             </div>
@@ -26,7 +24,6 @@ const Work = () => (
         ))}
       </div>
     </div>
-  </div>
-);
+  </div>;
 
-export default Work;
+

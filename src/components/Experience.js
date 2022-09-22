@@ -26,7 +26,10 @@ const Experience = () => {
         </div>
         <div className="w-full space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
           {logos.map((logo) => (
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div
+              key={logo.id}
+              className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            >
               <img
                 onMouseOver={() => handleMouseOver(logo.id)}
                 onMouseOut={handleMouseOut}
