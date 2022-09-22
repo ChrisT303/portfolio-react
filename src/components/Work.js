@@ -1,5 +1,5 @@
-import "./Work.css";
-import applications from "./work.json";
+import applications from "../data/ProjectData";
+
 
 const Work = () => (
   <div className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
@@ -9,15 +9,15 @@ const Work = () => (
           Portfolio
         </p>
       </div>
-      <div className="grid sm:grid-cols-3 gap-4">
+      <div className="grid mx-auto sm:grid-cols-2 md:grid-cols-3 gap-4">
         {applications.map((app) => (
-          <div key={app.key} className="w-full">
-            <div className="w-full hovereffect">
-              <img src={app.img} alt="{app.name}" />
-              <div className="overlay">
+          <div key={app.key}>
+            <div className="hovereffect">
+              <img src={app.src} alt="{app.name}" />
+              <div className="md:text-center overlay">
                 <h2>{app.name}</h2>
-                {/* <h4>{app.desc}</h4> */}
-                <a className="info" href="https://yohuck.github.io/wish-cycle/">
+                <h4 className="font-bold text-black">{app.desc}</h4>
+                <a className="info" href={app.link}>
                   Link Here
                 </a>
               </div>

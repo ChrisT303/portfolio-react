@@ -13,7 +13,7 @@ function App() {
    <Hero />
    <AboutMe/>
    <Experience/>
-      <Work />
+   <Work />
    <Footer/>
     </div>
   );

@@ -4,43 +4,43 @@ import { HiOutlineMail, HiFolderDownload } from "react-icons/hi";
 
 function Footer() {
   return (
-    <div className="hidden lg:flex fixed flex-col top-[60%] left-0">
+    <div className="hidden lg:flex fixed flex-col top-[50%] left-0">
       <ul>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+        <li className="side-buttons bg-blue-500">
           <a
-            className="flex justify-between items-center w-full text-gray-300"
+            className="button-content"
             href="/"
           >
             Linkedin <FaLinkedin size={30} />
           </a>
         </li>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6cc644]">
+        <li className="side-buttons bg-[#6cc644]">
           <a
-            className="flex justify-between items-center w-full text-gray-300"
+            className="button-content"
             href="/"
           >
             GitHub <FaGithub size={30} />
           </a>
         </li>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-orange-600">
+        <li className="side-buttons bg-orange-600">
           <a
-            className="flex justify-between items-center w-full text-gray-300"
+            className="button-content"
             href="/"
           >
             Stack OverFlow <FaStackOverflow size={30} />
           </a>
         </li>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-500">
+        <li className="side-buttons bg-gray-500">
           <a
-            className="flex justify-between items-center w-full text-gray-300"
+            className="button-content"
             href="/"
           >
             Email <HiOutlineMail size={30} />
           </a>
         </li>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
+        <li className="side-buttons bg-red-600">
           <a
-            className="flex justify-between items-center w-full text-gray-300"
+            className="button-content"
             href="/"
           >
             Resume <HiFolderDownload size={30} />

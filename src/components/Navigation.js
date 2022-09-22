@@ -10,9 +10,7 @@ const Navigation = () => {
 
   return (
     <div className="fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#0a192f] text-gray-300">
-      {/* <div>
-        <img src={Logo} alt="Logo" className="h-24 w-48 mt-5" />
-      </div> */}
+     
 
       <ul className="hidden md:flex">
         <li>Home</li>
@@ -25,7 +23,6 @@ const Navigation = () => {
       <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes/> }
       </div>
-      {/* Mobile Menu */}
       <ul
         className={
           !nav
