@@ -1,4 +1,5 @@
 import React from "react";
+import PortPic from "../assets/portfolio-pic.png";
 
 function AboutMe() {
   return (
@@ -14,7 +15,7 @@ function AboutMe() {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold ">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <img className="mx-auto" src={PortPic} alt="Portfolio Pic" />
           </div>
           <div>
             <p>
