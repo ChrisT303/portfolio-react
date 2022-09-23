@@ -3,10 +3,10 @@ import applications from "../data/ProjectData";
 import { HiOutlineLink } from "react-icons/hi";
 
 const Work = () => (
-  <div className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
+  <div className="w-full md:h-screen text-[#D1d7E0] bg-[#31708E]">
     <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
       <div className="pb-8">
-        <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-purple-800">
+        <p className="text-4xl font-bold inline border-b-4 text-[#D1d7E0] border-[#802BB1]">
           Portfolio
         </p>
       </div>

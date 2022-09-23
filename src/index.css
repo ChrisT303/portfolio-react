@@ -19,7 +19,7 @@
 }
 
 .button-content {
-  @apply flex justify-between items-center w-full text-gray-300;
+  @apply flex justify-between items-center w-full text-[#f7F9fB];
 }
 
 @media (min-width: 768px) {
