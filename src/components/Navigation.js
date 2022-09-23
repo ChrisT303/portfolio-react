@@ -9,7 +9,7 @@ const Navigation = () => {
  const handleClick = () => setNav(!nav)
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#2D283E] text-[#f7F9fB]">
+    <div className="fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#2D283E] text-[#e0ded1]">
       <ul className="hidden md:flex">
         <li>Home</li>
         <li>About Me</li>

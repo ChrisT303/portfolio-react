@@ -26,8 +26,11 @@
   //   </div>
   // </div>;
 
+    
+
+
 import React, { useState } from "react";
-import { FaLinkedin, FaGithub, FaStackOverflow } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaStackOverflow, FaFontAwesome } from "react-icons/fa";
 import { HiFolderDownload } from "react-icons/hi";
 import Resume from "./Resume";
 

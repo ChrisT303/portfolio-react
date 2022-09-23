@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEnvelope } from "react-icons/fa";
 
 
 const Contact = () => {
@@ -13,9 +14,12 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-[#802BB1] text-[#D1d7E0]">
+          <p className="text-4xl font-bold inline border-b-4 border-[#66b2b2] text-[#D1d7E0]">
             Contact
           </p>
+            <span>
+              <FaEnvelope className="inline-flex ml-4 text-4xl text-[#D1d7E0]"/>
+            </span>
           <p className="text-[#f7F9fB] py-4">
             Enter you info below and I will be back with you
           </p>
@@ -38,7 +42,7 @@ const Contact = () => {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="text-white border-2 hover:bg-[#802BB1] hover:border-[#5c1c82] px-4 py-3 my-8 mx-auto flex items-center">
+        <button className="text-white border-2 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold px-4 py-3 my-8 mx-auto flex items-center">
           Submit
         </button>
       </form>

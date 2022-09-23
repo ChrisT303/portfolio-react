@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+      'balloon': "url('./assets/hotairballoon.png')",
+      },
+    },
   },
   plugins: [],
 };
