@@ -1,12 +1,11 @@
 import React from "react";
 import { FaEnvelope } from "react-icons/fa";
 
-
 const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#2D283E] flex justify-center items-center p-4"
+      className="w-full h-screen main flex justify-center items-center p-4"
     >
       <form
         method="POST"
@@ -14,13 +13,13 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-[#66b2b2] text-[#D1d7E0]">
+          <p className="text-4xl font-bold inline border-b-4 bdr text-main">
             Contact
           </p>
           <span>
-            <FaEnvelope className="inline-flex ml-4 text-4xl text-[#D1d7E0]" />
+            <FaEnvelope className="inline-flex ml-4 text-4xl text-main" />
           </span>
-          <p className="text-[#f7F9fB] py-2">
+          <p className="text-main py-2">
             Please enter your info below and I will be back with you within 24
             hours. You can also email me directly at:
             <a
@@ -32,26 +31,24 @@ const Contact = () => {
           </p>
         </div>
         <input
-          className="bg-[#ccd6f6] p-2"
+          className="form-bg p-2"
           type="text"
           placeholder="Name"
           name="name"
         />
         <input
-          className="my-4 py-2 bg-[#ccd6f6]"
+          className="my-4 py-2 form-bg"
           type="email"
           placeholder="Email"
           name="email"
         />
         <textarea
-          className="bg-[#ccd6f6] p-2"
+          className="form-bg p-2"
           name="message"
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="text-white border-2 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold px-4 py-3 my-8 mx-auto flex items-center">
-          Submit
-        </button>
+        <button className="con-btn">Submit</button>
       </form>
     </div>
   );

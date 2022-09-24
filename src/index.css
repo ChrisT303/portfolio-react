@@ -22,6 +22,43 @@
   @apply flex justify-between items-center w-full text-[#f7F9fB];
 }
 
+.nav-hover{
+@apply hover:animate-pulse hover:text-[#66b2b2];
+}
+
+
+.main {
+@apply bg-[#2D283E];
+}
+
+.secondary{
+@apply bg-[#31708E];
+}
+
+.text-main{
+@apply text-[#e0ded1];
+}
+
+.peach {
+@apply text-[#FFE5b4];
+}
+
+.bdr{
+@apply border-[#66b2b2];
+}
+
+.form-bg {
+@apply bg-[#ccd6f6];
+}
+
+.hero-btn{
+@apply text-main border-4 rounded-full px-6 py-3 my-2 flex items-center hover:animate-pulse duration-100 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold
+}
+
+.con-btn{
+@apply text-main border-2 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold px-4 py-3 my-8 mx-auto flex items-center;
+}
+
 @media (min-width: 768px) {
   .hovereffect {
     width: 100%;

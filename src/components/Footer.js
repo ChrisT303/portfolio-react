@@ -4,9 +4,6 @@ import { HiFolderDownload } from "react-icons/hi";
 // import Resume from "./Resume";
 
 const Footer = () => {
-
-
- 
   return (
     <div className="hidden lg:flex fixed flex-col top-[50%] left-0">
       <ul>
@@ -42,6 +39,6 @@ const Footer = () => {
       </ul>
     </div>
   );
-}
+};
 
 export default Footer;
