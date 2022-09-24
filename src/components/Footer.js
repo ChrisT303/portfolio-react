@@ -32,10 +32,12 @@ const Footer = () => {
           </a>
         </li>
         <li className="side-buttons bg-red-600">
-          <button  className="button-content" >
+          <a
+            className="button-content"
+            href="https://drive.google.com/file/d/1L4tDGX2ejbyd1-mDdsmRxdNuH5bYtPtp/view?usp=sharing"
+          >
             Resume <HiFolderDownload size={30} />
-          </button>
-        
+          </a>
         </li>
       </ul>
     </div>
