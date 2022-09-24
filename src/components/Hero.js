@@ -4,6 +4,7 @@ import { FaHandPointRight } from "react-icons/fa";
 
 
 
+
 const Hero = () => {
 
   return (

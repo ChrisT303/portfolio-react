@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa';
+import Logo from "../assets/newlogo.png";
 
 // import Logo from '../assets/logo2.png';
 
@@ -9,7 +10,10 @@ const Navigation = () => {
  const handleClick = () => setNav(!nav)
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#2D283E] text-[#e0ded1]">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#2D283E] text-[#e0ded1]">
+      <div>
+        <img src={Logo} alt="Logo" className='h-16' />
+      </div>
       <ul className="hidden md:flex">
         <li>Home</li>
         <li>About Me</li>
