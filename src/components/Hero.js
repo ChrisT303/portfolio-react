@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHandPointRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -27,9 +28,9 @@ const Hero = () => {
         </p>
         <div>
           <button className="text-[#e0ded1] group border-4 rounded-full px-6 py-3 my-2 flex items-center hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold">
-            My Projects
+            <NavLink to="/work">My Projects</NavLink>
             <span className="group-hover:rotate-90 group-hover:fa-bounce duration-200">
-              <FaHandPointRight className="ml-2"/>
+              <FaHandPointRight className="ml-2" />
             </span>
           </button>
           ;

@@ -1,5 +1,5 @@
 import applications from "../data/ProjectData";
-
+import { FaGithub } from "react-icons/fa";
 import { HiOutlineLink } from "react-icons/hi";
 
 const Work = () => (
@@ -17,11 +17,15 @@ const Work = () => (
               <img src={app.src} alt="{app.name}" />
               <div className="overlay">
                 <h2 className="text-center">{app.name}</h2>
-                <h4 className="font-bold text-black text-center">{app.desc}</h4>
+                <a href={app.desc} className="info">
+                  <div className="flex justify-center">
+                    <FaGithub />
+                  </div>
+                </a>
                 <a className="info" href={app.link}>
-                  <h3 className="flex justify-center">
+                  <div className='flex justify-center'>
                     <HiOutlineLink />
-                  </h3>
+                  </div>
                 </a>
               </div>
             </div>
