@@ -42,19 +42,25 @@ const Navigation = () => {
         }
       >
         <li className="py-6 text-4xl">
-          <NavLink to="/"> Home</NavLink>
+          <NavLink onClick={handleClick} to="/">
+            {" "}
+            Home
+          </NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink to="/about"> About Me</NavLink>
+          <NavLink onClick={handleClick} to="/about">
+            {" "}
+            About Me
+          </NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink to="/work"> Portfolio</NavLink>
+          <NavLink onClick={handleClick} to="/work"> Portfolio</NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink to="/experience">Experience</NavLink>
+          <NavLink onClick={handleClick} to="/experience">Experience</NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink onClick={handleClick} to="/contact">Contact</NavLink>
         </li>
       </ul>
     </div>
