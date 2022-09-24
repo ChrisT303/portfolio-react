@@ -17,11 +17,18 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-[#66b2b2] text-[#D1d7E0]">
             Contact
           </p>
-            <span>
-              <FaEnvelope className="inline-flex ml-4 text-4xl text-[#D1d7E0]"/>
-            </span>
-          <p className="text-[#f7F9fB] py-4">
-            Enter you info below and I will be back with you
+          <span>
+            <FaEnvelope className="inline-flex ml-4 text-4xl text-[#D1d7E0]" />
+          </span>
+          <p className="text-[#f7F9fB] py-2">
+            Please enter your info below and I will be back with you within 24
+            hours. You can also email me directly at:
+            <a
+              href="mailto:chris.t.williams417@gmail.com"
+              className="ml-2 font-bold hover:text-[#FFE5b4]"
+            >
+              chris.t.williams417@gmail.com
+            </a>
           </p>
         </div>
         <input
