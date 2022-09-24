@@ -17,7 +17,7 @@ const Work = () => (
               <img src={app.src} alt="{app.name}" />
               <div className="overlay">
                 <h2 className="text-center">{app.name}</h2>
-                <a href={app.desc} className="info">
+                <a href={app.code} className="info">
                   <div className="flex justify-center">
                     <FaGithub />
                   </div>
