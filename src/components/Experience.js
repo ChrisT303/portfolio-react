@@ -19,11 +19,11 @@ const Experience = () => {
           <p className="text-4xl font-bold inline border-b-4 bdr">Experience</p>
           <p className="py-4">Technologies I have worked with</p>
         </div>
-        <div className="w-full space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8">
           {logos.map((logo) => (
             <div
               key={logo.id}
-              className="shadow-md shadow-[#040c16] hover:scale-110 duration-1000"
+              className="shadow-lg shadow-[#040c16] hover:scale-110 duration-1000"
             >
               <img
                 onMouseOver={() => handleMouseOver(logo.id)}

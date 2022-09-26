@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="w-full h-screen main bg-balloon bg-contain bg-center">
-      <div className="max-w-[1000px] mx-auto px-14 flex flex-col justify-center h-full">
+      <div className="max-w-[1000px] mx-auto px-12 flex flex-col justify-center h-full">
         <p className="peach  font-bold"> Hello! My name is </p>
         <h1 className="text-3xl sm:text-5xl font-bold text-main">
           Chris Williams
