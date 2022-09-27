@@ -9,7 +9,7 @@ const Navigation = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 main text-main">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 main text-main z-10">
       <div>
         <img src={Logo} alt="Logo" className="h-16" />
       </div>
@@ -41,7 +41,7 @@ const Navigation = () => {
         </li>
       </ul>
 
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="md:hidden z-100">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
       <ul

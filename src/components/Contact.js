@@ -4,7 +4,7 @@ import { FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   return (
     <div
-      name="contact"
+      
       className="w-full h-screen main flex justify-center items-center p-4"
     >
       <form
@@ -35,18 +35,20 @@ const Contact = () => {
           type="text"
           placeholder="Name"
           name="name"
-        />
+          required />
         <input
           className="my-4 py-2 form-bg"
           type="email"
           placeholder="Email"
           name="email"
+          required
         />
         <textarea
           className="form-bg p-2"
           name="message"
           rows="10"
           placeholder="Message"
+          required
         ></textarea>
         <button className="con-btn">Submit</button>
       </form>
