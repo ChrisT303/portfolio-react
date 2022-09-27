@@ -9,7 +9,7 @@ const Experience = () => {
   };
 
   const handleMouseOut = () => {
-    setIsHoveringID(undefined);
+    setIsHoveringID(false);
   };
 
   return (
@@ -33,9 +33,9 @@ const Experience = () => {
                 alt={logo.alt}
               />
               {hoveringID === logo.id ? (
-                <p className="font-bold">{logo.hoverContent}</p>
+                <p className="font-bold text-2xl">{logo.hoverContent}</p>
               ) : (
-                ""
+                ''
               )}
             </div>
           ))}

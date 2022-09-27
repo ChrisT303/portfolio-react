@@ -1,11 +1,11 @@
-import CssLogo from "../assets/css-logo.png";
-import HtmlLogo from "../assets/html-logo.png";
-import JavaScriptLogo from "../assets/javascript-logo.png";
+import CssLogo from "../assets/css-logo-176x150.png";
+import HtmlLogo from "../assets/html-logo-176x150.png";
+import JavaScriptLogo from "../assets/javascript-logo-176x150.png";
 import MongoLogo from "../assets/mongo-logo.png";
 import MysqlLogo from "../assets/mysql-logo.png";
-import NodeLogo from "../assets/node-logo.png";
+import NodeLogo from "../assets/node-logo-176x150.png";
 import ReactLogo from "../assets/react-logo.png";
-import TailwindLogo from "../assets/tailwind-logo.png";
+import TailwindLogo from "../assets/tailwind-logo-176x150.png";
 
 
   const logos = [
