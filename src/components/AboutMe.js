@@ -17,10 +17,7 @@ function AboutMe() {
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-              adipisci dolore beatae, necessitatibus nesciunt illo maiores
-              quibusdam ea porro, modi minima vero dolorem dicta minus soluta
-              veniam distinctio non ipsum!
+              Hi! My name is Chris. I recently graduated from a Full-Stack Developer boot camp at the University of Denver. I have been in sales for the past 14 years and decided it was time for a career change. I love tech and all of the challenges it brings. I like to solve complex problems and working with a team. I am outgoing and dedicated to doing what is necessary to complete any task. I believe that keeping an open mind is key to becoming a better Developer and am inclined to take in any feedback I can get. Thanks for taking the time and I hope to hear from you soon!
             </p>
           </div>
         </div>

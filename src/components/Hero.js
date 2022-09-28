@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 const Hero = () => {
   return (
     <div className="w-full h-screen main bg-balloon bg-contain bg-center">
@@ -10,15 +11,10 @@ const Hero = () => {
           Chris Williams
         </h1>
         <h2 className="text-3xl sm:text-5xl font-bold text-[#66b2b2]">
-          I am a Full Stack web developer
+          Full Stack Developer
         </h2>
         <p className="peach font-bold py-4 max-w-[700px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          velit, cum tenetur assumenda possimus ratione porro impedit architecto
-          ex quasi inventore repellat, veniam repudiandae accusamus. Labore aut
-          cupiditate impedit cum ea. Neque magnam expedita at nemo id nam
-          inventore doloribus vero? Omnis, laudantium voluptas. Deserunt quod
-          sapiente earum fugiat. Exercitationem!
+         Based in Denver, CO. I am passionate about tech, design, data, and everything in between. Welcome to my page! Feel free to have a look around and contact me with any questions you might have. 
         </p>
         <div>
           <button className="hero-btn">
@@ -27,6 +23,7 @@ const Hero = () => {
           ;
         </div>
       </div>
+      {/* <Modal /> */}
     </div>
   );
 };

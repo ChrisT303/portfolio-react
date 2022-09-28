@@ -1,57 +1,94 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
+import Modal from "./Modal";
 
-const Contact = () => {
+const Contact = (props) => {
+  const [showModal, setShowModal] = useState();
+  const [enteredName, setEnteredName] = useState("");
+  const [enteredEmail, setEnteredEmail] = useState("");
+
+  const contactHandler = (event) => {
+    event.preventDefault();
+    if (enteredName.trim().length === 0 || enteredEmail.trim().length === 0) {
+      setShowModal({
+        title: "Invalid Input",
+        message: "Please enter a valid name and email",
+      });
+      return;
+    }
+    if (enteredName.trim().length > 0 || enteredEmail.trim().length > 0) {
+      setShowModal({
+        title: "Thank You",
+        message: "Your form as been submitted",
+      });
+      return;
+    }
+    props.Contact(enteredName, enteredEmail);
+    setEnteredName("");
+    setEnteredEmail("");
+  };
+
+  const modalHandler = () => {
+    setShowModal(null);
+  };
+
   return (
-    <div
-      
-      className="w-full h-screen main flex justify-center items-center p-4"
-    >
-      <form
-        method="POST"
-        action="https://getform.io/f/8e30048c-6662-40d9-bd8b-da62595ce998"
-        className="flex flex-col max-w-[600px] w-full"
-      >
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 bdr text-main">
-            Contact
-          </p>
-          <span>
-            <FaEnvelope className="inline-flex ml-4 text-4xl text-main" />
-          </span>
-          <p className="text-main py-2">
-            Please enter your info below and I will be back with you within 24
-            hours. You can also email me directly at:
-            <a
-              href="mailto:chris.t.williams417@gmail.com"
-              className="ml-2 font-bold hover:text-[#FFE5b4]"
-            >
-              chris.t.williams417@gmail.com
-            </a>
-          </p>
-        </div>
-        <input
-          className="form-bg p-2"
-          type="text"
-          placeholder="Name"
-          name="name"
-          required />
-        <input
-          className="my-4 py-2 form-bg"
-          type="email"
-          placeholder="Email"
-          name="email"
-          required
+    <div>
+      {showModal && (
+        <Modal
+          title={showModal.title}
+          message={showModal.message}
+          onShowModal={modalHandler}
         />
-        <textarea
-          className="form-bg p-2"
-          name="message"
-          rows="10"
-          placeholder="Message"
-          required
-        ></textarea>
-        <button className="con-btn">Submit</button>
-      </form>
+      )}
+      <div className="w-full h-screen main flex justify-center items-center p-4">
+        <form
+          onSubmit={contactHandler}
+          method="POST"
+          action="https://getform.io/f/8e30048c-6662-40d9-bd8b-da62595ce998"
+          className="flex flex-col max-w-[600px] w-full"
+        >
+          <div className="pb-8">
+            <p className="text-4xl font-bold inline border-b-4 bdr text-main">
+              Contact
+            </p>
+            <span>
+              <FaEnvelope className="inline-flex ml-4 text-4xl text-main" />
+            </span>
+            <p className="text-main py-2">
+              Please enter your info below and I will be back with you within 24
+              hours. You can also email me directly at:
+              <a
+                href="mailto:chris.t.williams417@gmail.com"
+                className="ml-2 font-bold hover:text-[#FFE5b4]"
+              >
+                chris.t.williams417@gmail.com
+              </a>
+            </p>
+          </div>
+          <input
+            className="form-bg p-2"
+            type="text"
+            placeholder="Name"
+            name="name"
+          />
+          <input
+            className="my-4 py-2 form-bg"
+            type="email"
+            placeholder="Email"
+            name="email"
+          />
+          <textarea
+            className="form-bg p-2"
+            name="message"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button onClick={() => setShowModal(!showModal)} className="con-btn">
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
