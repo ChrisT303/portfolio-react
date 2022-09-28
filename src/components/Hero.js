@@ -1,7 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import Modal from "./Modal";
-
 
 const Hero = () => {
   return (
@@ -15,7 +13,9 @@ const Hero = () => {
           Full Stack Developer
         </h2>
         <p className="peach font-bold py-4 max-w-[700px]">
-         Based in Denver, CO. I am passionate about tech, design, data, and everything in between. Welcome to my page! Feel free to have a look around and contact me with any questions you might have. 
+          Based in Denver, CO. I am passionate about tech, design, data, and
+          everything in between. Welcome to my page! Feel free to have a look
+          around and contact me with any questions you might have.
         </p>
         <div>
           <button className="hero-btn">
@@ -24,7 +24,6 @@ const Hero = () => {
           ;
         </div>
       </div>
-      {/* <Modal /> */}
     </div>
   );
 };

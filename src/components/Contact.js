@@ -3,9 +3,7 @@ import { FaEnvelope } from "react-icons/fa";
 import Modal from "./Modal";
 
 const Contact = (props) => {
-  const [showModal, setShowModal] = useState(
-    JSON.parse(localStorage.getItem("open")) || false
-  );
+  const [showModal, setShowModal] = useState(false);
   const [enteredName, setEnteredName] = useState("");
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
@@ -18,6 +16,7 @@ const Contact = (props) => {
     ) {
       event.preventDefault();
       setShowModal({
+        class: 'bg-red-500',
         title: "Invalid Input",
         message: "Please enter enter a valid name, email or message.",
       });
@@ -27,38 +26,35 @@ const Contact = (props) => {
       enteredName.trim().length > 0 ||
       enteredEmail.trim().length > 0 ||
       enteredMessage.trim().length > 0
-      ) {
-        setShowModal({
-          title: "Thank You",
-          message: "Your form as been submitted",
-        }
-       
-        );
-        return;
-      }
-      props.Contact(enteredName, enteredEmail);
-      setEnteredName("");
-      setEnteredEmail("");
-      setEnteredMessage("");
-    };
-    
-    const nameChangeHandler = (event) => {
-      setEnteredName(event.target.value);
-    };
-    
-    const emailChangeHandler = (event) => {
-      setEnteredEmail(event.target.value);
-    };
-    
-    const messageChangeHandler = (event) => {
-      setEnteredMessage(event.target.value);
-    };
-    
-    const modalHandler = () => {
-    setShowModal((prevState) => {
-      localStorage.setItem("open", !prevState);
-      return !prevState;
-    });
+    ) {
+      setShowModal({
+        title: "Thank You",
+        message: "Your form as been submitted",
+      });
+      return;
+    }else {
+      this.setState(true)
+    }
+    props.Contact(enteredName, enteredEmail);
+    setEnteredName("");
+    setEnteredEmail("");
+    setEnteredMessage("");
+  };
+
+  const nameChangeHandler = (event) => {
+    setEnteredName(event.target.value);
+  };
+
+  const emailChangeHandler = (event) => {
+    setEnteredEmail(event.target.value);
+  };
+
+  const messageChangeHandler = (event) => {
+    setEnteredMessage(event.target.value);
+  };
+
+  const modalHandler = () => {
+    setShowModal(null);
   };
 
   return (
@@ -113,9 +109,7 @@ const Contact = (props) => {
             onChange={messageChangeHandler}
           ></textarea>
 
-          <button onClick={modalHandler} className="con-btn">
-            Submit
-          </button>
+          <button className="con-btn">Submit</button>
         </form>
       </div>
       {showModal && (
@@ -123,6 +117,7 @@ const Contact = (props) => {
           title={showModal.title}
           message={showModal.message}
           onShowModal={modalHandler}
+        
         />
       )}
     </div>

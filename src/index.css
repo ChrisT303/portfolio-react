@@ -22,41 +22,43 @@
   @apply flex justify-between items-center w-full text-[#f7F9fB];
 }
 
-.nav-hover{
-@apply hover:animate-pulse hover:text-[#66b2b2];
+.nav-hover {
+  @apply hover:animate-pulse hover:text-[#66b2b2];
 }
-
 
 .main {
-@apply bg-[#2D283E];
+  @apply bg-[#2D283E];
 }
 
-.secondary{
-@apply bg-[#31708E];
+.secondary {
+  @apply bg-[#31708E];
 }
 
-.text-main{
-@apply text-[#e0ded1];
+.text-main {
+  @apply text-[#e0ded1];
 }
 
 .peach {
-@apply text-[#FFE5b4];
+  @apply text-[#FFE5b4];
 }
 
-.bdr{
-@apply border-[#66b2b2];
+.bdr {
+  @apply border-[#66b2b2];
 }
 
 .form-bg {
-@apply bg-[#ccd6f6];
+  @apply bg-[#ccd6f6];
 }
 
-.hero-btn{
-@apply text-main border-4 rounded-full px-6 py-3 my-2 flex items-center hover:animate-pulse duration-100 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold
+.hero-btn {
+  @apply text-main border-4 rounded-full px-6 py-3 my-2 flex items-center hover:animate-pulse duration-100 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold;
 }
 
-.con-btn{
-@apply text-main border-2 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold px-4 py-3 my-8 mx-auto flex items-center;
+.con-btn {
+  @apply text-main border-2 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold px-4 py-3 my-8 mx-auto flex items-center;
+}
+.modal-btn {
+  @apply text-black border-4 rounded-lg hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold px-3 py-2 my-8 mx-auto flex justify-between items-center;
 }
 
 @media (min-width: 768px) {
@@ -152,7 +154,8 @@
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
   }
-}.bounce {
+}
+.bounce {
   display: inline-block;
   position: relative;
   -moz-animation: bounce 0.5s infinite linear;
@@ -161,6 +164,11 @@
   animation: bounce 0.5s infinite linear;
 }
 
+.card {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+}
 
 .backdrop {
   position: fixed;
@@ -182,17 +190,21 @@
 }
 
 .header {
-  background: #4f005f;
+  background: #31708E;
   padding: 1rem;
 }
 
 .header h2 {
   margin: 0;
   color: white;
+  font-weight: bold;
 }
 
 .content {
+  display: flex;
+  justify-content: space-between;
   padding: 1rem;
+  background: white;
 }
 
 .actions {
@@ -202,7 +214,7 @@
 }
 
 @media (min-width: 768px) {
-  .modal {
+  .modalPos {
     left: calc(50% - 20rem);
     width: 40rem;
   }
