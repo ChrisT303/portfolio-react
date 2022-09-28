@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/newlogo.png";
 
-// import Logo from '../assets/logo2.png';
 const Navigation = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);

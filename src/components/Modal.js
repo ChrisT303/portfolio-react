@@ -1,7 +1,6 @@
 import React from "react";
 
 const Modal = (props) => {
- 
   return (
     <div>
       <div className="backdrop" onClick={props.onShowModal} />
@@ -20,6 +19,6 @@ const Modal = (props) => {
       </div>
     </div>
   );
-}
+};
 
-export default Modal
+export default Modal;

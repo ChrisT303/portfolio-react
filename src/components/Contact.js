@@ -3,49 +3,71 @@ import { FaEnvelope } from "react-icons/fa";
 import Modal from "./Modal";
 
 const Contact = (props) => {
-  const [showModal, setShowModal] = useState();
+  const [showModal, setShowModal] = useState(
+    JSON.parse(localStorage.getItem("open")) || false
+  );
   const [enteredName, setEnteredName] = useState("");
   const [enteredEmail, setEnteredEmail] = useState("");
+  const [enteredMessage, setEnteredMessage] = useState("");
 
   const contactHandler = (event) => {
-    event.preventDefault();
-    if (enteredName.trim().length === 0 || enteredEmail.trim().length === 0) {
+    if (
+      enteredName.trim().length === 0 ||
+      enteredEmail.trim().length === 0 ||
+      enteredMessage.trim().length === 0
+    ) {
+      event.preventDefault();
       setShowModal({
         title: "Invalid Input",
-        message: "Please enter a valid name and email",
+        message: "Please enter enter a valid name, email or message.",
       });
       return;
     }
-    if (enteredName.trim().length > 0 || enteredEmail.trim().length > 0) {
-      setShowModal({
-        title: "Thank You",
-        message: "Your form as been submitted",
-      });
-      return;
-    }
-    props.Contact(enteredName, enteredEmail);
-    setEnteredName("");
-    setEnteredEmail("");
-  };
-
-  const modalHandler = () => {
-    setShowModal(null);
+    if (
+      enteredName.trim().length > 0 ||
+      enteredEmail.trim().length > 0 ||
+      enteredMessage.trim().length > 0
+      ) {
+        setShowModal({
+          title: "Thank You",
+          message: "Your form as been submitted",
+        }
+       
+        );
+        return;
+      }
+      props.Contact(enteredName, enteredEmail);
+      setEnteredName("");
+      setEnteredEmail("");
+      setEnteredMessage("");
+    };
+    
+    const nameChangeHandler = (event) => {
+      setEnteredName(event.target.value);
+    };
+    
+    const emailChangeHandler = (event) => {
+      setEnteredEmail(event.target.value);
+    };
+    
+    const messageChangeHandler = (event) => {
+      setEnteredMessage(event.target.value);
+    };
+    
+    const modalHandler = () => {
+    setShowModal((prevState) => {
+      localStorage.setItem("open", !prevState);
+      return !prevState;
+    });
   };
 
   return (
     <div>
-      {showModal && (
-        <Modal
-          title={showModal.title}
-          message={showModal.message}
-          onShowModal={modalHandler}
-        />
-      )}
       <div className="w-full h-screen main flex justify-center items-center p-4">
         <form
           onSubmit={contactHandler}
           method="POST"
-          action="https://getform.io/f/8e30048c-6662-40d9-bd8b-da62595ce998"
+          action="https://getform.io/f/182419e0-81f1-4e7f-a5f6-ed57b3b52dd9"
           className="flex flex-col max-w-[600px] w-full"
         >
           <div className="pb-8">
@@ -71,24 +93,38 @@ const Contact = (props) => {
             type="text"
             placeholder="Name"
             name="name"
+            value={enteredName}
+            onChange={nameChangeHandler}
           />
           <input
             className="my-4 py-2 form-bg"
             type="email"
             placeholder="Email"
             name="email"
+            value={enteredEmail}
+            onChange={emailChangeHandler}
           />
           <textarea
             className="form-bg p-2"
             name="message"
             rows="10"
             placeholder="Message"
+            value={enteredMessage}
+            onChange={messageChangeHandler}
           ></textarea>
-          <button onClick={() => setShowModal(!showModal)} className="con-btn">
+
+          <button onClick={modalHandler} className="con-btn">
             Submit
           </button>
         </form>
       </div>
+      {showModal && (
+        <Modal
+          title={showModal.title}
+          message={showModal.message}
+          onShowModal={modalHandler}
+        />
+      )}
     </div>
   );
 };
