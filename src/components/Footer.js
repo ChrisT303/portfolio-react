@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-inherit">
       <div>
         <div>
-          <div className="max-w-[1000px] hidden mx-auto md:flex flex-col pt-4 pb-2">
+          <div className="max-w-[1000px]  mx-auto md:flex flex-col pt-4 pb-2">
             <ul className="w-full space-y-2  grid grid-cols-4 mb-0 gap-8">
               <li>
                 <a
@@ -36,7 +36,7 @@ const Footer = () => {
                   href="https://stackoverflow.com/users/19105152/chriswill303"
                   className="text-main  hover:text-[#FF9900] group"
                 >
-                  <h2 className="invisible group-hover:visible  group-hover:animate-bounce">
+                  <h2 className="invisible group-hover:visible  group-hover:animate-bounce ">
                     stack overflow
                   </h2>
                   <FaStackOverflow size={30} />
