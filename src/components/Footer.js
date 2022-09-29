@@ -4,10 +4,10 @@ import { HiFolderDownload } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="h-[140px] w-full px-4 bg-inherit">
+    <footer className="bg-inherit">
       <div>
         <div>
-          <div className="max-w-[1000px] mx-auto flex flex-col pt-4">
+          <div className="max-w-[1000px] hidden mx-auto md:flex flex-col pt-4 pb-2">
             <ul className="w-full space-y-2  grid grid-cols-4 mb-0 gap-8">
               <li>
                 <a
@@ -54,9 +54,6 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <h4 className="pt-8 text-center text-main">
-              © 2022 Copyright: Chris Williams Media
-            </h4>
           </div>
         </div>
       </div>

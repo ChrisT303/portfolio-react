@@ -33,8 +33,10 @@ const Work = () => (
           </div>
         ))}
       </div>
+      <div className=" w-full px-4 pl-[10%] md:pt-[10px] ">
+        <Footer />
+      </div>
     </div>
-    <Footer />
   </div>
 );
 

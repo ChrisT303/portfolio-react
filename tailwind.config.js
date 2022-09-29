@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        balloon: "url('./assets/hotairballoon.png')",
+        balloon: "url('./assets/Eye-graffiti.png')",
+      },
+      backgroundImage2: {
+        eyes: "url('./assets/Eye-graffiti.png')",
       },
     },
   },

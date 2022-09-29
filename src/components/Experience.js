@@ -15,7 +15,7 @@ const Experience = () => {
 
   return (
     <div className="w-full h-screen main text-main">
-      <div className="max-w-[1000px] pt-[80px] mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] pt-[40px] mx-auto flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 bdr">Experience</p>
           <p className="py-4">Technologies I have worked with</p>
@@ -24,25 +24,27 @@ const Experience = () => {
           {logos.map((logo) => (
             <div
               key={logo.id}
-              className="shadow-lg shadow-[#040c16] hover:scale-110 duration-1000"
+              className="shadow-none md:shadow-lg md:shadow-[#040c16] md:hover:scale-110 md:duration-1000"
             >
               <img
                 onMouseOver={() => handleMouseOver(logo.id)}
                 onMouseOut={handleMouseOut}
-                className="w-20 mx-auto md:w-40"
+                className="w-10 mx-auto md:w-40"
                 src={logo.src}
                 alt={logo.alt}
               />
               {hoveringID === logo.id ? (
                 <p className="font-bold text-2xl">{logo.hoverContent}</p>
               ) : (
-                ''
+                ""
               )}
             </div>
           ))}
         </div>
+        <div className=" w-full px-4 pl-[10%] md:pt-[10px] ">
+          <Footer />
+        </div>
       </div>
-        <Footer />
     </div>
   );
 };

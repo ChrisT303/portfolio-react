@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-inherit text-main font-semibold z-10">
       <div>
-        <img src={Logo} alt="Logo" className="h-16" />
+        <img  src={Logo} alt="Logo" className="hidden md:flex h-16" />
       </div>
       <ul className="hidden md:flex">
         <li>
