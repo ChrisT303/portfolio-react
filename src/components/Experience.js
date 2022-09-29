@@ -14,7 +14,7 @@ const Experience = () => {
 
   return (
     <div className="w-full h-screen main text-main">
-      <div className="max-w-[1000px] pt-[150px] mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] pt-[80px] mx-auto flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 bdr">Experience</p>
           <p className="py-4">Technologies I have worked with</p>
@@ -28,7 +28,7 @@ const Experience = () => {
               <img
                 onMouseOver={() => handleMouseOver(logo.id)}
                 onMouseOut={handleMouseOut}
-                className="w-20 mx-auto md:w-60"
+                className="w-20 mx-auto md:w-40"
                 src={logo.src}
                 alt={logo.alt}
               />
