@@ -14,13 +14,7 @@
   }
 }
 
-.side-buttons {
-  @apply w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300;
-}
 
-.button-content {
-  @apply flex justify-between items-center w-full text-[#f7F9fB];
-}
 
 .nav-hover {
   @apply hover:animate-pulse hover:text-[#66b2b2];
@@ -164,11 +158,7 @@
   animation: bounce 0.5s infinite linear;
 }
 
-.card {
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  border-radius: 10px;
-}
+
 
 .backdrop {
   position: fixed;
@@ -190,7 +180,7 @@
 }
 
 .header {
-  background: #31708E;
+  background: #31708e;
   padding: 1rem;
 }
 

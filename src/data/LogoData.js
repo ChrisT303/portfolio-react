@@ -25,7 +25,7 @@ import TailwindLogo from "../assets/tailwind-logo-176x150.png";
       id: 3,
       src: JavaScriptLogo,
       alt: "JS Logo",
-      hoverContent: "Javascript",
+      hoverContent: "JavaScript",
     },
     {
       id: 4,

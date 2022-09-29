@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="h-[150px] px-4 main ">
       <div className="container p-4">
-        <div className="">
+        <div>
           <div className="mb-4">
-            <ul className="w-full flex items-center justify-around  mb-0">
+            <ul className="w-full flex items-center justify-around  mb-0 ">
               <li>
                 <a
                   href="https://www.linkedin.com/in/christopher-williams-368b29201/"
@@ -44,7 +44,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1L4tDGX2ejbyd1-mDdsmRxdNuH5bYtPtp/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1U7PzBKN4b86Zkl16N55fDvl2dB-N6HMp/view?usp=sharing"
                   className="text-main hover:text-red-600 group"
                 >
                   <h2 className="invisible group-hover:visible group-hover:animate-bounce">

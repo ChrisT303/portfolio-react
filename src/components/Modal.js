@@ -6,7 +6,7 @@ const Modal = (props) => {
   return (
     <div>
       <div
-        className="fixed inset-0 bg-black bg-opacity-80 z-10 backdrop-blur-sm]"
+        className="backdrop"
         onClick={props.onShowModal}
       />
       <div className="modalPos">

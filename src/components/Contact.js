@@ -16,7 +16,6 @@ const Contact = (props) => {
     ) {
       event.preventDefault();
       setShowModal({
-        class: 'bg-red-500',
         title: "Invalid Input",
         message: "Please enter enter a valid name, email or message.",
       });
@@ -59,14 +58,14 @@ const Contact = (props) => {
 
   return (
     <div>
-      <div className="w-full h-screen main flex justify-center items-center p-4">
+      <div className="w-full h-screen flex justify-center items-center p-4 main">
         <form
           onSubmit={contactHandler}
           method="POST"
           action="https://getform.io/f/182419e0-81f1-4e7f-a5f6-ed57b3b52dd9"
           className="flex flex-col max-w-[600px] w-full"
         >
-          <div className="pb-8">
+          <div className="pt-[120px]">
             <p className="text-4xl font-bold inline border-b-4 bdr text-main">
               Contact
             </p>
@@ -117,7 +116,6 @@ const Contact = (props) => {
           title={showModal.title}
           message={showModal.message}
           onShowModal={modalHandler}
-        
         />
       )}
     </div>

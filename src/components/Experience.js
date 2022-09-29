@@ -14,12 +14,12 @@ const Experience = () => {
 
   return (
     <div className="w-full h-screen main text-main">
-      <div className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] pt-[150px] mx-auto flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 bdr">Experience</p>
           <p className="py-4">Technologies I have worked with</p>
         </div>
-        <div className="w-full space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-12 text-center py-8">
+        <div className="w-full space-y-2  grid grid-cols-2 sm:grid-cols-4 gap-12 text-center py-8">
           {logos.map((logo) => (
             <div
               key={logo.id}
