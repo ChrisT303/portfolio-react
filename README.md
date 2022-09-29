@@ -35,5 +35,6 @@ Contact me by clicking the below links:
 * [Github Link](https://github.com/deftonechris)
 * [Email Link](mailto:chris.t.williams417@gmail.com)
 ## Deployed Link
-* [Portfolio](https://superb-torrone-01092a.netlify.app/)
+[Portfolio](https://superb-torrone-01092a.netlify.app/)
 ## screenshot
+![image](https://user-images.githubusercontent.com/103149149/192939460-9e9eabfe-b826-4fb7-bc08-e3bc32d06262.png)
