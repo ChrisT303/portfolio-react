@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import Modal from "./Modal";
 
+
 const Contact = (props) => {
   const [showModal, setShowModal] = useState(false);
   const [enteredName, setEnteredName] = useState("");
@@ -31,8 +32,8 @@ const Contact = (props) => {
         message: "Your form as been submitted",
       });
       return;
-    }else {
-      this.setState(true)
+    } else {
+      this.setState(true);
     }
     props.Contact(enteredName, enteredEmail);
     setEnteredName("");
@@ -65,7 +66,7 @@ const Contact = (props) => {
           action="https://getform.io/f/182419e0-81f1-4e7f-a5f6-ed57b3b52dd9"
           className="flex flex-col max-w-[600px] w-full"
         >
-          <div className="pt-[120px]">
+          <div className="pt-[80px]">
             <p className="text-4xl font-bold inline border-b-4 bdr text-main">
               Contact
             </p>
@@ -111,6 +112,7 @@ const Contact = (props) => {
           <button className="con-btn">Submit</button>
         </form>
       </div>
+      
       {showModal && (
         <Modal
           title={showModal.title}

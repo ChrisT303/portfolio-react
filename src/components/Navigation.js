@@ -3,12 +3,13 @@ import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/newlogo.png";
 
+
 const Navigation = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 main text-main z-10">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-inherit text-main font-semibold z-10">
       <div>
         <img src={Logo} alt="Logo" className="h-16" />
       </div>

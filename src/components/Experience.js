@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logos from "../data/LogoData";
+import Footer from "./Footer";
 
 const Experience = () => {
   const [hoveringID, setIsHoveringID] = useState();
@@ -41,6 +42,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
+        <Footer />
     </div>
   );
 };

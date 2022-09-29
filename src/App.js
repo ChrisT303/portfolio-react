@@ -2,7 +2,7 @@
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 };

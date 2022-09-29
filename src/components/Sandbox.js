@@ -4,7 +4,7 @@ import { HiFolderDownload } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="h-[140px] w-full px-4 bg-inherit">
+    <footer className="h-[100px] w-full px-4 main">
       <div>
         <div>
           <div className="max-w-[1000px] mx-auto flex flex-col pt-4">

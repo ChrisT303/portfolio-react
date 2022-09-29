@@ -1,6 +1,7 @@
 import applications from "../data/ProjectData";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineLink } from "react-icons/hi";
+import Footer from "./Footer";
 
 const Work = () => (
   <div className="w-full md:h-screen text-main secondary">
@@ -10,7 +11,7 @@ const Work = () => (
           Portfolio
         </p>
       </div>
-      <div className="grid mx-auto sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid mx-auto sm:grid-cols-2 md:grid-cols-3 gap-4 ">
         {applications.map((app) => (
           <div key={app.key}>
             <div className="hovereffect">
@@ -33,6 +34,7 @@ const Work = () => (
         ))}
       </div>
     </div>
+    <Footer />
   </div>
 );
 

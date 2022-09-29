@@ -1,5 +1,6 @@
 import React from "react";
 import PortPic from "../assets/portfolio-pic.png";
+import Footer from "./Footer";
 
 function AboutMe() {
   return (
@@ -17,11 +18,20 @@ function AboutMe() {
           </div>
           <div>
             <p>
-              Hi! My name is Chris. I recently graduated from a Full-Stack Developer boot camp at the University of Denver. I have been in sales for the past 14 years and decided it was time for a career change. I love tech and all of the challenges it brings. I like to solve complex problems and working with a team. I am outgoing and dedicated to doing what is necessary to complete any task. I believe that keeping an open mind is key to becoming a better Developer and am inclined to take in any feedback I can get. Thanks for taking the time and I hope to hear from you soon!
+              Hi! My name is Chris. I recently graduated from a Full-Stack
+              Developer boot camp at the University of Denver. I have been in
+              sales for the past 14 years and decided it was time for a career
+              change. I love tech and all of the challenges it brings. I like to
+              solve complex problems and working with a team. I am outgoing and
+              dedicated to doing what is necessary to complete any task. I
+              believe that keeping an open mind is key to becoming a better
+              Developer and am inclined to take in any feedback I can get.
+              Thanks for taking the time and I hope to hear from you soon!
             </p>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
