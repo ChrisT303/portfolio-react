@@ -59,7 +59,7 @@ const Contact = (props) => {
 
   return (
     <div>
-      <div className="w-full h-screen flex justify-center items-center p-4 bg-balloon bg-cover">
+      <div className="w-full h-screen flex justify-center items-center p-4 bg-eyes bg-cover bg-center">
         <form
           onSubmit={contactHandler}
           method="POST"
@@ -112,7 +112,7 @@ const Contact = (props) => {
           <button className="con-btn">Submit</button>
         </form>
       </div>
-      
+
       {showModal && (
         <Modal
           title={showModal.title}

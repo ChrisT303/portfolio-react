@@ -14,7 +14,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="w-full h-screen main text-main">
+    <div className="w-full h-screen bg-eyes bg-cover bg-center text-main">
       <div className="max-w-[1000px] pt-[40px] mx-auto flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 bdr">Experience</p>
@@ -41,9 +41,8 @@ const Experience = () => {
             </div>
           ))}
         </div>
-        <div className=" w-full px-4 pl-[10%] md:pt-[10px] ">
-        </div>
-          <Footer />
+        <div className=" w-full px-4 pl-[10%] md:pt-[10px] "></div>
+        <Footer />
       </div>
     </div>
   );

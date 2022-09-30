@@ -4,7 +4,10 @@ import Footer from "./Footer";
 
 function AboutMe() {
   return (
-    <div name="about" className="w-full h-screen secondary text-main">
+    <div
+      name="about"
+      className="w-full h-screen bg-eyes bg-cover bg-center text-main"
+    >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -14,10 +17,14 @@ function AboutMe() {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold ">
-            <img className="mx-auto h-[200px] md:h-[425px] " src={PortPic} alt="Portfolio Pic" />
+            <img
+              className="mx-auto h-[200px] md:h-[425px] "
+              src={PortPic}
+              alt="Portfolio Pic"
+            />
           </div>
           <div>
-            <p>
+            <p className="font-bold">
               Hi! My name is Chris. I recently graduated from a Full-Stack
               Developer boot camp at the University of Denver. I have been in
               sales for the past 14 years and decided it was time for a career
@@ -30,8 +37,8 @@ function AboutMe() {
             </p>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

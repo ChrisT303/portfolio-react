@@ -17,27 +17,20 @@
 
 
 .nav-hover {
-  @apply hover:animate-pulse hover:text-[#66b2b2];
+  @apply hover:animate-pulse hover:text-[#30D5C8];
 }
 
-.main {
-  @apply bg-[#2D283E];
-}
-
-.secondary {
-  @apply bg-[#31708E];
-}
 
 .text-main {
-  @apply text-[#e0ded1];
-}
-
-.peach {
   @apply text-[#212020];
 }
 
+.peach {
+  @apply text-[#212020] text-opacity-80;
+}
+
 .bdr {
-  @apply border-[#66b2b2];
+  @apply border-[#30D5C8];
 }
 
 .form-bg {
@@ -49,10 +42,10 @@
 }
 
 .con-btn {
-  @apply text-main border-2 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold px-4 py-3 my-8 mx-auto flex items-center;
+  @apply text-main border-2 hover:bg-[#30D5C8] hover:border-[#3e7a7a] hover:font-bold px-4 py-3 my-8 mx-auto flex items-center;
 }
 .modal-btn {
-  @apply text-black border-4 rounded-lg hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold px-3 py-2 my-8 mx-auto flex justify-between items-center;
+  @apply text-black border-4 rounded-lg hover:bg-[#30D5C8] hover:border-[#3e7a7a] hover:font-bold px-3 py-2 my-8 mx-auto flex justify-between items-center;
 }
 
 @media (min-width: 768px) {
