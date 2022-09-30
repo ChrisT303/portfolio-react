@@ -33,7 +33,7 @@
 }
 
 .peach {
-  @apply text-[#FFE5b4];
+  @apply text-[#212020];
 }
 
 .bdr {
@@ -45,7 +45,7 @@
 }
 
 .hero-btn {
-  @apply text-main border-4 rounded-full px-6 py-3 my-2 flex items-center hover:animate-pulse duration-100 hover:bg-[#66b2b2] hover:border-[#3e7a7a] hover:font-bold;
+  @apply text-black font-bold border-4 rounded-full px-6 py-3 my-2 flex items-center hover:animate-pulse duration-100 hover:bg-[#30D5C8] hover:border-[#3e7a7a] hover:font-black;
 }
 
 .con-btn {

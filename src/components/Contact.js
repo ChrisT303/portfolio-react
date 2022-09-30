@@ -59,21 +59,21 @@ const Contact = (props) => {
 
   return (
     <div>
-      <div className="w-full h-screen flex justify-center items-center p-4 main">
+      <div className="w-full h-screen flex justify-center items-center p-4 bg-balloon bg-cover">
         <form
           onSubmit={contactHandler}
           method="POST"
           action="https://getform.io/f/182419e0-81f1-4e7f-a5f6-ed57b3b52dd9"
           className="flex flex-col max-w-[600px] w-full"
         >
-          <div className="pt-[80px]">
+          <div className="pt-[80px] pb-8">
             <p className="text-4xl font-bold inline border-b-4 bdr text-main">
               Contact
             </p>
             <span>
               <FaEnvelope className="inline-flex ml-4 text-4xl text-main" />
             </span>
-            <p className="text-main py-2">
+            <p className="text-main py-4">
               Please enter your info below and I will be back with you within 24
               hours. You can also email me directly at:
               <a
