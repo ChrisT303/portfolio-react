@@ -9,32 +9,13 @@ const Contact = (props) => {
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
 
-  const contactHandler = (e) => {
-    e.preventDefault();
-
-    const sendEmail = (e) => {
-      emailjs
-        .sendForm(
-          "service_wdafmka",
-          "template_hw180ir",
-          form.current,
-          "5GDPu2_CkMH075_Zo"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    };
-
+  const contactHandler = (event) => {
     if (
       enteredName.trim().length === 0 ||
       enteredEmail.trim().length === 0 ||
       enteredMessage.trim().length === 0
     ) {
+      event.preventDefault();
       setShowModal({
         title: "Invalid Input",
         message: "Please enter enter a valid name, email or message.",
@@ -50,15 +31,14 @@ const Contact = (props) => {
         title: "Thank You",
         message: "Your form as been submitted",
       });
-      sendEmail();
-      setEnteredName("");
-      setEnteredEmail("");
-      setEnteredMessage("");
       return;
     } else {
       this.setState(true);
     }
     props.Contact(enteredName, enteredEmail);
+    setEnteredName("");
+    setEnteredEmail("");
+    setEnteredMessage("");
   };
 
   const nameChangeHandler = (event) => {
@@ -79,12 +59,32 @@ const Contact = (props) => {
 
   const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wdafmka",
+        "template_hw180ir",
+        form.current,
+        "5GDPu2_CkMH075_Zo"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <div className="w-full h-screen flex justify-center items-center p-4 bg-eyes bg-cover bg-center">
         <form
           ref={form}
-          onSubmit={contactHandler}
+          onSubmit={contactHandler && sendEmail}
           className="flex flex-col max-w-[600px] w-full"
         >
           <div className="pt-[80px] pb-8">
