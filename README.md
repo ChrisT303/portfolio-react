@@ -22,9 +22,9 @@ Install dependencies and run `npm install`
 Via the nav bar and independent buttons.
 ## Technologies Used
 * React
-* Node.js
+* NodeJS
 * Tailwind Css
-* getform.io
+* EmailJS
 * Canva
 * React Icons
 ## License
