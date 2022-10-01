@@ -12,7 +12,7 @@ const Contact = (props) => {
   const contactHandler = (e) => {
     e.preventDefault();
 
-    const sendEmail = (e) => {
+    const sendEmail = () => {
       emailjs
         .sendForm(
           "service_wdafmka",

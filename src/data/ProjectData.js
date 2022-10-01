@@ -12,7 +12,7 @@ const applications = [
     key: 1,
     name: "Recycling App",
     src: WishCycle,
-    code: "https://github.com/yohuck/wish-cycle",
+    code: "https://github.com/deftonechris/wish-cycle",
     link: "https://yohuck.github.io/wish-cycle/",
   },
   {
