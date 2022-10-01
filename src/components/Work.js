@@ -16,15 +16,15 @@ const Work = () => (
           <div key={app.key}>
             <div className="hovereffect">
               <img src={app.src} alt="{app.name}" />
-              <div className="overlay">
-                <h2 className="text-center">{app.name}</h2>
+              <div className="overlay grid grid-cols-3 md:inline-block md:grid-cols-none pt-4 md:pt-0">
+                <h2 className="font-bold">{app.name}</h2>
                 <a href={app.code} className="info">
-                  <div className="flex justify-center">
+                  <div className="flex justify-around text-2xl md:text-base">
                     <FaGithub />
                   </div>
                 </a>
                 <a className="info" href={app.link}>
-                  <div className="flex justify-center">
+                  <div className="flex justify-around text-2xl md:text-base">
                     <HiOutlineLink />
                   </div>
                 </a>

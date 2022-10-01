@@ -18,7 +18,7 @@ function AboutMe() {
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold ">
             <img
-              className="mx-auto h-[200px] md:h-[425px] "
+              className="mx-auto h-[140px] md:h-[425px] "
               src={PortPic}
               alt="Portfolio Pic"
             />

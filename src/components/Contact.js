@@ -14,8 +14,9 @@ const Contact = (props) => {
       enteredName.trim().length === 0 ||
       enteredEmail.trim().length === 0 ||
       enteredMessage.trim().length === 0
-    ) {
-      event.preventDefault();
+      ) {
+        
+        event.preventDefault();
       setShowModal({
         title: "Invalid Input",
         message: "Please enter enter a valid name, email or message.",
@@ -78,7 +79,7 @@ const Contact = (props) => {
               hours. You can also email me directly at:
               <a
                 href="mailto:chris.t.williams417@gmail.com"
-                className="ml-2 font-bold hover:text-[#FFE5b4]"
+                className="ml-2 font-bold hover:text-[#30D5C8]"
               >
                 chris.t.williams417@gmail.com
               </a>
