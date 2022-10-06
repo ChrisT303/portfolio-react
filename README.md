@@ -11,7 +11,7 @@ Portfolio page informing the user about me and the skills I have learned.
   - [Usage](#usage)
   - [Technologies Used](#technologies-used)
   - [License](#license)
-        - [This project is licensed under](#this-project-is-licensed-under)
+        - [This project is licensed under]
   - [Questions](#questions)
   - [Deployed Link](#deployed-link)
   - [screenshot](#screenshot)
@@ -28,7 +28,6 @@ Via the nav bar and independent buttons.
 * Canva
 * React Icons
 ## License
-##### This project is licensed under
 The MIT License
 ## Questions
 Contact me by clicking the below links:
