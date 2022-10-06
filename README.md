@@ -11,7 +11,6 @@ Portfolio page informing the user about me and the skills I have learned.
   - [Usage](#usage)
   - [Technologies Used](#technologies-used)
   - [License](#license)
-        - [This project is licensed under]
   - [Questions](#questions)
   - [Deployed Link](#deployed-link)
   - [screenshot](#screenshot)
