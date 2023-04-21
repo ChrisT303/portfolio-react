@@ -23,8 +23,8 @@ const Hero = () => {
             <NavLink to="/work">My Projects</NavLink>
           </button>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

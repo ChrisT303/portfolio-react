@@ -20,11 +20,11 @@ const Experience = () => {
           <p className="text-4xl font-bold inline border-b-4 bdr">Experience</p>
           <p className="py-4">Technologies I have worked with</p>
         </div>
-        <div className="w-full space-y-2  grid grid-cols-2 sm:grid-cols-4 gap-12 text-center py-8">
+        <div className="w-full space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-12 text-center py-8 justify-center">
           {logos.map((logo) => (
             <div
               key={logo.id}
-              className="shadow-none md:shadow-lg md:shadow-[#040c16] md:hover:scale-110 md:duration-1000"
+              className="shadow-none md:shadow-lg md:shadow-[#040c16] md:hover:scale-110 md:duration-1000 relative"
             >
               <img
                 onMouseOver={() => handleMouseOver(logo.id)}
@@ -34,14 +34,16 @@ const Experience = () => {
                 alt={logo.alt}
               />
               {hoveringID === logo.id ? (
-                <p className="font-bold text-2xl">{logo.hoverContent}</p>
+                <p className="font-bold text-2xl absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+                  {logo.hoverContent}
+                </p>
               ) : (
                 ""
               )}
             </div>
           ))}
         </div>
-        <div className=" w-full px-4 pl-[10%] md:pt-[10px] "></div>
+        <div className="w-full px-4 pl-[10%] md:pt-[10px]"></div>
         <Footer />
       </div>
     </div>
@@ -49,3 +51,4 @@ const Experience = () => {
 };
 
 export default Experience;
+

@@ -1,18 +1,18 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaStackOverflow } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiFolderDownload } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="bg-inherit">
+    <footer className="bg-inherit fixed bottom-0 left-0 w-full">
       <div>
         <div>
-          <div className="max-w-[1000px]  mx-auto md:flex flex-col pt-4 pb-2">
-            <ul className="w-full space-y-2  grid grid-cols-4 auto-cols-max mb-0 gap-8">
+          <div className="max-w-[1000px] mx-auto pt-4 pb-2">
+            <ul className="w-full space-y-2 grid grid-cols-3 auto-cols-max mb-0 gap-8 justify-center">
               <li>
                 <a
                   href="https://www.linkedin.com/in/christopher-williams-368b29201/"
-                  className="text-main  hover:text-[#0072b1] group"
+                  className="text-main hover:text-[#0072b1] group"
                 >
                   <h2 className="invisible md:group-hover:visible md:group-hover:animate-bounce pt-2">
                     LinkedIn
@@ -23,23 +23,12 @@ const Footer = () => {
               <li>
                 <a
                   href="https://github.com/deftonechris"
-                  className="text-main  hover:text-[#6cc644] group"
+                  className="text-main hover:text-[#6cc644] group"
                 >
                   <h2 className="invisible md:group-hover:visible md:group-hover:animate-bounce">
                     GitHub
                   </h2>
                   <FaGithub size={30} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://stackoverflow.com/users/19105152/chriswill303"
-                  className="text-main text-[8px] md:text-base  hover:text-[#FF9900] group"
-                >
-                  <h2 className="invisible md:group-hover:visible md:group-hover:animate-bounce">
-                    stack overflow
-                  </h2>
-                  <FaStackOverflow size={30} />
                 </a>
               </li>
               <li>
@@ -62,3 +51,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
