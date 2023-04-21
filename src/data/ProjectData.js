@@ -11,6 +11,8 @@ const applications = [
     src: JobJot,
     code: "https://github.com/deftonechris/JobJot",
     link: "https://jobjot.onrender.com/",
+    tech: ["React", "Node.js", "MongoDB", "Express.js", "TailwindCSS"],
+
   },
   {
     key: 2,
@@ -18,6 +20,8 @@ const applications = [
     src: ForeSS,
     code: "https://github.com/deftonechris/ForeCastaway",
     link: "https://fore-castaway-rvp6.vercel.app/",
+    tech: ["TypeScript", "Next.js", "TailwindCSS"],
+
   },
   {
     key: 3,
@@ -25,6 +29,8 @@ const applications = [
     src: Libro,
     code: "https://github.com/deftonechris/LibroMarkIt",
     link: "https://libro-mark-it.vercel.app/",
+    tech: ["Next.js", "Node.js", "GraphQL", "MongoDB", "TailwindCSS"],
+
   },
 
 ];

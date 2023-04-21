@@ -30,6 +30,13 @@ const Work = () => (
                     </div>
                   </a>
                 </div>
+                <div className="tech-container">
+                  {app.tech.map((tech) => (
+                    <span key={tech} className="bg-main text-black text-bold py-1 px-2 rounded-md">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -41,3 +48,4 @@ const Work = () => (
 );
 
 export default Work;
+
