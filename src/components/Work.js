@@ -15,19 +15,21 @@ const Work = () => (
         {applications.map((app) => (
           <div key={app.key}>
             <div className="hovereffect">
-              <img src={app.src} alt="{app.name}" />
+              <img className="project-image" src={app.src} alt="{app.name}" />
               <div className="overlay grid grid-cols-3 md:inline-block md:grid-cols-none pt-4 md:pt-0">
                 <h2 className="font-bold">{app.name}</h2>
-                <a href={app.code} className="info">
-                  <div className="flex justify-around text-2xl md:text-base hover:text-[#6cc644]">
-                    <FaGithub />
-                  </div>
-                </a>
-                <a className="info" href={app.link}>
-                  <div className="flex justify-around text-2xl md:text-base hover:text-[#dE73FF]">
-                    <HiOutlineLink />
-                  </div>
-                </a>
+                <div className="button-container">
+                  <a href={app.code} className="info">
+                    <div className="flex justify-around text-2xl md:text-base hover:text-[#6cc644]">
+                      <FaGithub />
+                    </div>
+                  </a>
+                  <a className="info" href={app.link}>
+                    <div className="flex justify-around text-2xl md:text-base hover:text-[#dE73FF]">
+                      <HiOutlineLink />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

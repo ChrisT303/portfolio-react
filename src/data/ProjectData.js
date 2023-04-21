@@ -1,7 +1,6 @@
-import WishCycle from "../assets/Wish-cycle-screenshot.png";
-import Weather from '../assets/Weatherboard-screenshot.png';
-import Editor from '../assets/text-editor.png';
-
+import Libro from '../assets/Libro3.png'
+import JobJot from '../assets/JobJotSS.png'
+import ForeSS from '../assets/ForeSS.png'
 
 
 
@@ -9,21 +8,21 @@ const applications = [
   {
     key: 1,
     name: "JobJot",
-    src: WishCycle,
+    src: JobJot,
     code: "https://github.com/deftonechris/JobJot",
     link: "https://jobjot.onrender.com/",
   },
   {
     key: 2,
     name: "ForeCastaway",
-    src: Weather,
+    src: ForeSS,
     code: "https://github.com/deftonechris/ForeCastaway",
     link: "https://fore-castaway-rvp6.vercel.app/",
   },
   {
     key: 3,
     name: "LibroMarkit",
-    src: Editor,
+    src: Libro,
     code: "https://github.com/deftonechris/LibroMarkIt",
     link: "https://libro-mark-it.vercel.app/",
   },
