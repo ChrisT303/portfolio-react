@@ -26,7 +26,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink to="/experience" className="nav-hover">
-            Experience
+            Skills
           </NavLink>
         </li>
         <li>
@@ -63,7 +63,7 @@ const Navigation = () => {
         </li>
         <li className="py-6 text-4xl">
           <NavLink onClick={handleClick} to="/experience" className="nav-hover">
-            Experience
+            Skills
           </NavLink>
         </li>
         <li className="py-6 text-4xl">
