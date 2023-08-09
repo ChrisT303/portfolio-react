@@ -28,7 +28,7 @@ function AboutMe() {
               I am Christopher Williams, a dedicated Full Stack Developer with a
               robust background in sales, marketing, and management. Recently
               certified through a rigorous Full Stack Web Development program at
-              the esteemed University of Denver, I have transitioned my career
+              the University of Denver, I have transitioned my career
               trajectory to embrace my passion for technology and
               problem-solving. My professional journey has been marked by
               successful collaboration with clients and cross-functional teams,
