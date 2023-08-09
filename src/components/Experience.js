@@ -17,29 +17,19 @@ const Experience = () => {
     <div className="w-full h-screen bg-eyes bg-cover bg-center text-main">
       <div className="max-w-[1000px] pt-[40px] mx-auto flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 bdr">Experience</p>
+          <p className="text-4xl font-bold inline border-b-4 bdr">Skills</p>
           <p className="py-4">Technologies I have worked with</p>
         </div>
         <div className="w-full space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-12 text-center py-8 justify-center">
           {logos.map((logo) => (
             <div
               key={logo.id}
-              className="shadow-none md:shadow-lg md:shadow-[#040c16] md:hover:scale-110 md:duration-1000 relative"
+              className="container shadow-none md:shadow-lg md:shadow-[#040c16] md:hover:scale-110 md:duration-1000 relative"
+              onMouseOver={() => handleMouseOver(logo.id)}
+              onMouseOut={handleMouseOut}
             >
-              <img
-                onMouseOver={() => handleMouseOver(logo.id)}
-                onMouseOut={handleMouseOut}
-                className="w-10 mx-auto md:w-40"
-                src={logo.src}
-                alt={logo.alt}
-              />
-              {hoveringID === logo.id ? (
-                <p className="font-bold text-2xl absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-                  {logo.hoverContent}
-                </p>
-              ) : (
-                ""
-              )}
+              <img className="w-10 mx-auto md:w-40" src={logo.src} alt={logo.alt} />
+              <span className="tooltip">{logo.hoverContent}</span>
             </div>
           ))}
         </div>
@@ -51,4 +41,5 @@ const Experience = () => {
 };
 
 export default Experience;
+
 

@@ -11,7 +11,7 @@ function AboutMe() {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 bdr">About Me</p>
+            <p className="text-4xl font-bold inline border-b-4 bdr text-white">About Me</p>
           </div>
           <div></div>
         </div>
@@ -24,16 +24,18 @@ function AboutMe() {
             />
           </div>
           <div>
-            <p className="font-bold">
-              Hi! My name is Chris. I recently graduated from a Full-Stack
-              Developer boot camp at the University of Denver. I have been in
-              sales for the past 14 years and decided it was time for a career
-              change. I love tech and all of the challenges it brings. I like to
-              solve complex problems and working with a team. I am outgoing and
-              dedicated to doing what is necessary to complete any task. I
-              believe that keeping an open mind is key to becoming a better
-              Developer and am inclined to take in any feedback I can get.
-              Thanks for taking the time and I hope to hear from you soon!
+            <p className="font-bold text-white">
+              I am Christopher Williams, a dedicated Full Stack Developer with a
+              robust background in sales, marketing, and management. Recently
+              certified through a rigorous Full Stack Web Development program at
+              the esteemed University of Denver, I have transitioned my career
+              trajectory to embrace my passion for technology and
+              problem-solving. My professional journey has been marked by
+              successful collaboration with clients and cross-functional teams,
+              yielding innovative web-based applications. I have harnessed my
+              experience to effectively bridge the realms of business and
+              technology, creating applications that engage users while meeting
+              strategic goals.
             </p>
           </div>
         </div>

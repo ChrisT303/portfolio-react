@@ -88,20 +88,20 @@ const Contact = (props) => {
           className="flex flex-col max-w-[600px] w-full"
         >
           <div className="pt-[80px] pb-8">
-            <p className="text-4xl font-bold inline border-b-4 bdr text-main">
+            <p className="text-4xl font-bold inline border-b-4 bdr text-white">
               Contact
             </p>
             <span>
-              <FaEnvelope className="inline-flex ml-4 text-4xl text-main" />
+              <FaEnvelope className="inline-flex ml-4 text-4xl text-white" />
             </span>
-            <p className="text-main py-4">
+            <p className="text-white py-4 text-white">
               Please enter your info below and I will be back with you within 24
               hours. You can also email me directly at:
               <a
                 href="mailto:chris.t.williams417@gmail.com"
                 className="ml-2 font-bold hover:text-[#c28691]"
               >
-                chris.t.williams417@gmail.com
+                chriswillthedev@gmail.com
               </a>
             </p>
           </div>

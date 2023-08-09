@@ -15,27 +15,27 @@ const Navigation = () => {
       </div>
       <ul className="hidden md:flex">
         <li>
-          <NavLink to="/" className="nav-hover">
+          <NavLink to="/" className="nav-hover text-white">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className="nav-hover">
+          <NavLink to="/about" className="nav-hover text-white">
             About Me
           </NavLink>
         </li>
         <li>
-          <NavLink to="/experience" className="nav-hover">
+          <NavLink to="/experience" className="nav-hover text-white">
             Skills
           </NavLink>
         </li>
         <li>
-          <NavLink to="/work" className="nav-hover">
+          <NavLink to="/work" className="nav-hover text-white">
             Portfolio
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className="nav-hover">
+          <NavLink to="/contact" className="nav-hover text-white">
             Contact
           </NavLink>
         </li>
@@ -52,27 +52,27 @@ const Navigation = () => {
         }
       >
         <li className="py-6 text-4xl">
-          <NavLink onClick={handleClick} to="/" className="nav-hover">
+          <NavLink onClick={handleClick} to="/" className="nav-hover text-white">
             Home
           </NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink onClick={handleClick} to="/about" className="nav-hover">
+          <NavLink onClick={handleClick} to="/about" className="nav-hover text-white">
             About Me
           </NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink onClick={handleClick} to="/experience" className="nav-hover">
+          <NavLink onClick={handleClick} to="/experience" className="nav-hover text-white">
             Skills
           </NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink onClick={handleClick} to="/work" className="nav-hover">
+          <NavLink onClick={handleClick} to="/work" className="nav-hover text-white">
             Portfolio
           </NavLink>
         </li>
         <li className="py-6 text-4xl">
-          <NavLink onClick={handleClick} to="/contact" className="nav-hover">
+          <NavLink onClick={handleClick} to="/contact" className="nav-hover text-white">
             Contact
           </NavLink>
         </li>
