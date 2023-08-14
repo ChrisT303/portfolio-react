@@ -224,16 +224,16 @@ a.info:hover {
 
 .tooltip {
   visibility: hidden;
-  background-color: #555; /* Background color of the tooltip */
-  color: #fff; /* Text color of the tooltip */
+  background-color: #555; 
+  color: #fff;
   text-align: center;
   padding: 5px 10px;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  bottom: 100%; /* Position the tooltip above the logo */
+  bottom: 100%; 
   left: 50%;
-  margin-left: -60px; /* Adjust as needed */
+  margin-left: -60px; 
   opacity: 0;
   transition: opacity 0.3s;
 }
