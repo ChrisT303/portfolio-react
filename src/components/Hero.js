@@ -6,14 +6,14 @@ const Hero = () => {
   return (
     <div className="w-full h-screen  bg-eyes  bg-cover bg-center">
       <div className="max-w-[1000px] mx-auto px-12 flex flex-col justify-center  h-full">
-        <p className="text-white font-bold "> Hello! My name is </p>
-        <h1 className="text-3xl sm:text-5xl font-bold text-white text-opacity-60">
+        <p className="text-white text-2xl font-bold "> Hello! My name is </p>
+        <h1 className="text-3xl sm:text-6xl font-bold text-white text-opacity-80">
           Chris Williams
         </h1>
-        <h2 className="text-3xl sm:text-5xl font-bold text-[#30D5C8] text-opacity-80">
+        <h2 className="text-3xl sm:text-7xl font-bold text-[#30D5C8] text-opacity-80">
           Full Stack Developer
         </h2>
-        <p className="text-white font-bold py-4 max-w-[700px] text-opacity-80">
+        <p className="text-gray-700 font-bold py-4 text-3xl max-w-[700px] text-opacity-80">
           Based in Denver, CO. I am passionate about tech, design, data, and
           everything in between. Welcome to my page! Feel free to have a look
           around and contact me with any questions you might have.
