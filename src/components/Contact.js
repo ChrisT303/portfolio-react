@@ -94,7 +94,7 @@ const Contact = (props) => {
             <span>
               <FaEnvelope className="inline-flex ml-4 text-4xl text-white" />
             </span>
-            <p className="text-white py-4 text-white">
+            <p className=" py-4 text-gray-700 text-2xl" >
               Please enter your info below and I will be back with you within 24
               hours. You can also email me directly at:
               <a

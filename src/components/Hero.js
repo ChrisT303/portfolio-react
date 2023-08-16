@@ -13,10 +13,9 @@ const Hero = () => {
         <h2 className="text-3xl sm:text-7xl font-bold text-[#30D5C8] text-opacity-80">
           Full Stack Developer
         </h2>
-        <p className="text-gray-700 font-bold py-4 text-3xl max-w-[700px] text-opacity-80">
-          Based in Denver, CO. I am passionate about tech, design, data, and
-          everything in between. Welcome to my page! Feel free to have a look
-          around and contact me with any questions you might have.
+        <p className="text-gray-700 font-bold py-4 text-2xl max-w-[700px] text-opacity-80">
+        Full Stack Developer specializing in React, Next.js, TailwindCSS, MongoDB, and GraphQL. Passionate about crafting clean, efficient, and user-friendly web applications. Actively seeking opportunities to expand my technical toolkit, currently diving into Python programming. Open to new challenges and continuously driven to learn and grow in the ever-evolving world of technology.
+
         </p>
         <div className="text-white">
           <button className="hero-btn">
