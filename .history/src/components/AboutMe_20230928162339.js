@@ -26,7 +26,7 @@ function AboutMe() {
             />
           </div>
           <div>
-            <p className="font-bold text-gray-700 text-l sm:text-2xl">
+            <p className="font-bold text-gray-700 ext-l sm:text-2xl">
               I am Christopher Williams, a dedicated Full Stack Developer with a
               robust background in sales, marketing, and management. Recently
               certified through a rigorous Full Stack Web Development program at

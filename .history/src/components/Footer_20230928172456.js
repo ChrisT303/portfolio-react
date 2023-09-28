@@ -2,14 +2,13 @@ import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiFolderDownload } from "react-icons/hi";
 
-const Footer = ({ hideOnMobile = true }) => {
+const Footer = ({ hideOnMobile = false }) => {
+  if (hideOnMobile) {
+    return null; 
+  }
+
   return (
-    <footer 
-      className="bg-inherit fixed bottom-0 left-0 w-full"
-      style={{ display: hideOnMobile ? 'none' : 'block' }}
-    >
-
-
+    <footer className="bg-inherit fixed bottom-0 left-0 w-full md:hidden block ">
       <div>
         <div>
           <div className="max-w-[1000px] mx-auto pt-4 pb-2">

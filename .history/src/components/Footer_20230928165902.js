@@ -2,14 +2,9 @@ import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiFolderDownload } from "react-icons/hi";
 
-const Footer = ({ hideOnMobile = true }) => {
+const Footer = () => {
   return (
-    <footer 
-      className="bg-inherit fixed bottom-0 left-0 w-full"
-      style={{ display: hideOnMobile ? 'none' : 'block' }}
-    >
-
-
+    <footer className="bg-inherit fixed bottom-0 left-0 w-full">
       <div>
         <div>
           <div className="max-w-[1000px] mx-auto pt-4 pb-2">
@@ -22,7 +17,7 @@ const Footer = ({ hideOnMobile = true }) => {
                   <h2 className="invisible md:group-hover:visible md:group-hover:animate-bounce pt-2">
                     LinkedIn
                   </h2>
-                  <FaLinkedin size={50} />
+                  <FaLinkedin  className="md:text-xl text-lg" />
                 </a>
               </li>
               <li>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/newlogo.png";
@@ -6,21 +6,7 @@ import Footer from "./Footer";
 
 const Navigation = () => {
   const [nav, setNav] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
   const handleClick = () => setNav(!nav);
-
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-inherit text-main text-2xl font-semibold z-10">
@@ -110,8 +96,7 @@ const Navigation = () => {
             Contact
           </NavLink>
         </li>
-        {nav && isMobile && <Footer hideOnMobile={false} />}
-
+        {nav && <Footer hideOnMobile={false} />}
       </ul>
     </div>
   );

@@ -25,19 +25,17 @@ const Work = () => (
                 {app.name}
               </h2>
               {/* Links centered below the image */}
-              <div className="col-span-3 text-center mb-4 md:mb-0">
-                <div className="flex justify-center space-x-4">
-                  <a href={app.code} className="info">
-                    <div className="flex justify-around text-2xl hover:text-[#6cc644]">
-                      <FaGithub />
-                    </div>
-                  </a>
-                  <a className="info" href={app.link}>
-                    <div className="flex justify-around text-2xl hover:text-[#dE73FF]">
-                      <HiOutlineLink />
-                    </div>
-                  </a>
-                </div>
+              <div className="col-span-3 text-center mb-4">
+                <a href={app.code} className="info">
+                  <div className="flex justify-around text-2xl hover:text-[#6cc644]">
+                    <FaGithub />
+                  </div>
+                </a>
+                <a className="info" href={app.link}>
+                  <div className="flex justify-around text-2xl hover:text-[#dE73FF]">
+                    <HiOutlineLink />
+                  </div>
+                </a>
               </div>
               {/* Tech names over the image */}
               <div className="col-span-3 text-center">
@@ -62,7 +60,6 @@ const Work = () => (
 );
 
 export default Work;
-
 
 
 

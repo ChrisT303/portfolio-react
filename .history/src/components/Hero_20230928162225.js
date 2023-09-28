@@ -13,7 +13,7 @@ const Hero = () => {
         <h2 className="text-3xl sm:text-7xl font-bold text-[#30D5C8] text-opacity-80">
           Full Stack Developer
         </h2>
-        <p className="text-gray-700 font-bold py-4 text-l sm:text-2xl max-w-[700px] text-opacity-80">
+        <p className="text-gray-700 font-bold py-4 text-2xl sm:text-sm max-w-[700px] text-opacity-80">
         Full Stack Developer specializing in React, Next.js, TailwindCSS, MongoDB, and GraphQL. Passionate about crafting clean, efficient, and user-friendly web applications. Actively seeking opportunities to expand my technical toolkit, currently diving into Python programming. Open to new challenges and continuously driven to learn and grow in the ever-evolving world of technology.
 
         </p>

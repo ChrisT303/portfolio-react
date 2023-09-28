@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiFolderDownload } from "react-icons/hi";
 
-const Footer = ({ hideOnMobile = true }) => {
+const Footer = () => {
+  // Define a state variable to track the screen width
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  // Define a function to update the screen width when the window is resized
+  const updateScreenWidth = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  // Use useEffect to add and remove the resize event listener
+  useEffect(() => {
+    window.addEventListener("resize", updateScreenWidth);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", updateScreenWidth);
+    };
+  }, []);
+
+  // Define a threshold screen width below which the footer won't be rendered
+  const thresholdScreenWidth = 768;
   return (
-    <footer 
-      className="bg-inherit fixed bottom-0 left-0 w-full"
-      style={{ display: hideOnMobile ? 'none' : 'block' }}
-    >
-
-
+    <footer className="bg-inherit fixed bottom-0 left-0 w-full ">
       <div>
         <div>
           <div className="max-w-[1000px] mx-auto pt-4 pb-2">
