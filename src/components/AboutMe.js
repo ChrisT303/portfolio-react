@@ -1,6 +1,5 @@
 import React from "react";
 import PortPic from "../assets/portfolio-pic.png";
-import Footer from "./Footer";
 
 function AboutMe() {
   return (
@@ -26,7 +25,7 @@ function AboutMe() {
             />
           </div>
           <div>
-            <p className="font-bold text-white custom-outline  text-l sm:text-2xl">
+            <p className="font-bold text-white custom-outline  text-xl sm:text-2xl">
               I am Christopher Williams, a dedicated Full Stack Developer with a
               robust background in sales, marketing, and management. Recently
               certified through a rigorous Full Stack Web Development program at
@@ -40,7 +39,7 @@ function AboutMe() {
             </p>
           </div>
         </div>
-        <Footer />
+     
       </div>
     </div>
   );
