@@ -5,6 +5,8 @@ import { HiFolderDownload } from "react-icons/hi";
 const Footer = () => {
   return (
     <footer className="bg-inherit fixed bottom-0 left-0 w-full">
+
+
       <div>
         <div>
           <div className="max-w-[1000px] mx-auto pt-4 pb-2">
@@ -51,3 +53,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

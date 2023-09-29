@@ -1,6 +1,7 @@
 import applications from "../data/ProjectData";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineLink } from "react-icons/hi";
+import Footer from "./Footer";
 
 const Work = () => (
   <div className="w-full md:h-screen text-white bg-eyes bg-cover bg-center">

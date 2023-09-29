@@ -10,14 +10,12 @@ const Navigation = () => {
 
   const handleClick = () => setNav(!nav);
   const handleResize = () => {
-    console.log('Window Width:', window.innerWidth); 
+    console.log(window.innerWidth); // continue to log the width to ensure this is working
     const shouldBeMobile = window.innerWidth <= 768;
-    console.log('Should be Mobile:', shouldBeMobile); 
+    console.log('Should be Mobile:', shouldBeMobile); // log the condition result before setting state
     setIsMobile(shouldBeMobile);
-    console.log('isMobile After Set:', isMobile);
   };
   
-
   
 
   useEffect(() => {

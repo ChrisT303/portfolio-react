@@ -17,7 +17,9 @@ const Navigation = () => {
     console.log('isMobile After Set:', isMobile);
   };
   
-
+  useEffect(() => {
+    console.log('isMobile changed:', isMobile); // this should log every time isMobile changes
+  }, [isMobile]);
   
 
   useEffect(() => {

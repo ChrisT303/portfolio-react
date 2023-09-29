@@ -9,25 +9,20 @@ const Navigation = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const handleClick = () => setNav(!nav);
-  const handleResize = () => {
-    console.log('Window Width:', window.innerWidth); 
-    const shouldBeMobile = window.innerWidth <= 768;
-    console.log('Should be Mobile:', shouldBeMobile); 
-    setIsMobile(shouldBeMobile);
-    console.log('isMobile After Set:', isMobile);
-  };
-  
 
+  const handleResize = () => {
+    console.log(window.innerWidth); 
+    setIsMobile(window.innerWidth <= 768);
+  };
   
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
-    handleResize(); 
-  
+    console.log(isMobile); 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); 
+  }, [isMobile]);
 
 
   return (
