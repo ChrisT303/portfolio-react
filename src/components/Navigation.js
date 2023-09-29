@@ -37,34 +37,34 @@ const Navigation = () => {
       </div>
       <ul className="hidden md:flex">
         <li>
-          <NavLink to="/" className="nav-hover text-white">
+          <NavLink to="/" className="nav-hover text-white custom-outline">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className="nav-hover text-white">
+          <NavLink to="/about" className="nav-hover text-white custom-outline">
             About Me
           </NavLink>
         </li>
         <li>
-          <NavLink to="/experience" className="nav-hover text-white">
+          <NavLink to="/experience" className="nav-hover text-white custom-outline">
             Skills
           </NavLink>
         </li>
         <li>
-          <NavLink to="/work" className="nav-hover text-white">
+          <NavLink to="/work" className="nav-hover text-white custom-outline">
             Portfolio
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className="nav-hover text-white">
+          <NavLink to="/contact" className="nav-hover text-white custom-outline">
             Contact
           </NavLink>
         </li>
       </ul>
 
       <div onClick={handleClick} className="md:hidden z-100">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? <FaBars className="text-white custom-outline"/> : <FaTimes />}
       </div>
       <ul
         className={
@@ -76,7 +76,7 @@ const Navigation = () => {
               {nav && (
         <div 
           onClick={handleClick} 
-          className="absolute top-4 right-4 z-50 cursor-pointer text-white"
+          className="absolute top-4 right-4 z-50 cursor-pointer text-white custom-outline"
           style={{ fontSize: '24px' }} // Adjust the size as needed
         >
           <FaTimes />
@@ -87,7 +87,7 @@ const Navigation = () => {
           <NavLink
             onClick={handleClick}
             to="/"
-            className="nav-hover text-white"
+            className="nav-hover text-white custom-outline"
           >
             Home
           </NavLink>
@@ -96,7 +96,7 @@ const Navigation = () => {
           <NavLink
             onClick={handleClick}
             to="/about"
-            className="nav-hover text-white"
+            className="nav-hover text-white custom-outline"
           >
             About Me
           </NavLink>
@@ -105,7 +105,7 @@ const Navigation = () => {
           <NavLink
             onClick={handleClick}
             to="/experience"
-            className="nav-hover text-white"
+            className="nav-hover text-white custom-outline"
           >
             Skills
           </NavLink>
@@ -114,7 +114,7 @@ const Navigation = () => {
           <NavLink
             onClick={handleClick}
             to="/work"
-            className="nav-hover text-white"
+            className="nav-hover text-white custom-outline"
           >
             Portfolio
           </NavLink>
@@ -123,7 +123,7 @@ const Navigation = () => {
           <NavLink
             onClick={handleClick}
             to="/contact"
-            className="nav-hover text-white"
+            className="nav-hover text-white custom-outline"
           >
             Contact
           </NavLink>

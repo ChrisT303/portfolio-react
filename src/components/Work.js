@@ -6,7 +6,7 @@ const Work = () => (
   <div className="w-full md:h-screen text-white bg-eyes bg-cover bg-center">
     <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
       <div className="pb-8">
-        <p className="text-4xl font-bold inline border-b-4 text-white bdr">
+        <p className="text-4xl font-bold inline border-b-4 text-white custom-outline bdr">
           Portfolio
         </p>
       </div>
@@ -44,7 +44,7 @@ const Work = () => (
                   {app.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-main text-black font-extrabold py-1 px-2 rounded-md"
+                      className="bg-main text-white custom-outline font-extrabold py-1 px-2 rounded-md"
                     >
                       {tech}
                     </span>

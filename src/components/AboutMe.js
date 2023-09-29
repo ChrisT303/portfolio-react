@@ -11,7 +11,7 @@ function AboutMe() {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 bdr text-white">
+            <p className="text-4xl font-bold inline border-b-4 bdr text-white custom-outline">
               About Me
             </p>
           </div>
@@ -26,7 +26,7 @@ function AboutMe() {
             />
           </div>
           <div>
-            <p className="font-bold text-gray-700 text-l sm:text-2xl">
+            <p className="font-bold text-white custom-outline  text-l sm:text-2xl">
               I am Christopher Williams, a dedicated Full Stack Developer with a
               robust background in sales, marketing, and management. Recently
               certified through a rigorous Full Stack Web Development program at
