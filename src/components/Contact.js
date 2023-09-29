@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import Modal from "./Modal";
@@ -8,6 +8,28 @@ const Contact = (props) => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
+
+  const formContainerRef = useRef();
+
+  useEffect(() => {
+    // Function to set the height of the form container to fill the available space
+    const setFormContainerHeight = () => {
+      formContainerRef.current.style.height = `${window.innerHeight}px`;
+    };
+
+    // Listen for window resize events and update the form container height
+    window.addEventListener("resize", setFormContainerHeight);
+
+    // Initial setup when the component mounts
+    setFormContainerHeight();
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", setFormContainerHeight);
+    };
+  }, []);
+
+
 
   const contactHandler = (e) => {
     e.preventDefault();
@@ -81,7 +103,7 @@ const Contact = (props) => {
 
   return (
     <div>
-      <div className="w-full h-screen flex justify-center items-center p-4 bg-eyes bg-cover bg-center">
+      <div ref={formContainerRef} className="w-full h-screen flex justify-center items-center p-4 bg-eyes bg-cover bg-center">
         <form
           ref={form}
           onSubmit={contactHandler}

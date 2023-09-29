@@ -17,7 +17,7 @@ const Footer = () => {
                   <h2 className="invisible md:group-hover:visible md:group-hover:animate-bounce pt-2">
                     LinkedIn
                   </h2>
-                  <FaLinkedin size={50} />
+                  <FaLinkedin size={30} />
                 </a>
               </li>
               <li>
@@ -28,7 +28,7 @@ const Footer = () => {
                   <h2 className="invisible md:group-hover:visible md:group-hover:animate-bounce">
                     GitHub
                   </h2>
-                  <FaGithub size={50} />
+                  <FaGithub size={30} />
                 </a>
               </li>
               <li>
@@ -39,7 +39,7 @@ const Footer = () => {
                   <h2 className="invisible md:group-hover:visible md:group-hover:animate-bounce">
                     Resume
                   </h2>
-                  <HiFolderDownload size={50} />
+                  <HiFolderDownload size={30} />
                 </a>
               </li>
             </ul>
