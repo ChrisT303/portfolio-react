@@ -14,7 +14,7 @@ const Contact = (props) => {
   useEffect(() => {
     // Function to set the height of the form container to fill the available space
     const setFormContainerHeight = () => {
-      formContainerRef.current.style.height = `${window.innerHeight}px`;
+      formContainerRef.current.style.minHeight = `${window.innerHeight}px`;
     };
 
     // Listen for window resize events and update the form container height
@@ -107,7 +107,7 @@ const Contact = (props) => {
         <form
           ref={form}
           onSubmit={contactHandler}
-          className="flex flex-col max-w-[600px] w-full"
+          className="flex flex-col max-w-[600px] w-full "
         >
           <div className="pt-[80px] pb-8">
             <p className="text-4xl font-bold inline border-b-4 bdr text-white custom-outline">
@@ -116,7 +116,7 @@ const Contact = (props) => {
             <span>
               <FaEnvelope className="inline-flex ml-4 text-4xl text-white custom-outline" />
             </span>
-            <p className=" py-4 text-white custom-outline text-2xl" >
+            <p className=" py-0 sm:py-4 text-white custom-outline text-xl sm:text-2xl" >
               Please enter your info below and I will be back with you within 24
               hours. You can also email me directly at:
               <a
