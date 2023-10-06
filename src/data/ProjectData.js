@@ -1,26 +1,26 @@
 import Libro from '../assets/Libro3.png'
 import JobJot from '../assets/JobJotSS.png'
-import ForeSS from '../assets/ForeSS.png'
+import Bored from '../assets/bored.png'
 
 
 
 const applications = [
   {
     key: 1,
-    name: "JobJot",
-    src: JobJot,
-    code: "https://github.com/deftonechris/JobJot",
-    link: "https://jobjot.onrender.com/",
-    tech: ["React", "Node.js", "MongoDB", "Express.js", "TailwindCSS"],
+    name: "Chairman of the Bored",
+    src: Bored,
+    code: "https://github.com/deftonechris/Chairman-of-the-Bored-v2-nextjs",
+    link: "https://chairman-teal.vercel.app/",
+    tech: ["Next.js", "Node.js", "MongoDB", "GraphQL", "TailwindCSS"],
 
   },
   {
     key: 2,
-    name: "ForeCastaway",
-    src: ForeSS,
-    code: "https://github.com/deftonechris/ForeCastaway",
-    link: "https://fore-castaway-rvp6.vercel.app/",
-    tech: ["TypeScript", "Next.js", "TailwindCSS"],
+    name: "JobJot",
+    src: JobJot,
+    code: "https://github.com/deftonechris/JobJot",
+    link: "https://jobjot.vercel.app/landing",
+    tech: ["React", "Node.js", "MongoDB", "Express.js", "TailwindCSS"],
 
   },
   {
