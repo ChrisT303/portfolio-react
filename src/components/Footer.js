@@ -33,7 +33,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1F9QXAFgH3DuC2GkPuuiRkouwcBjN8J8z/view?usp=drive_link"
+                  href="https://docs.google.com/document/d/1S8bjhs9hW5qasD6gzUo7qbEaUfOVpqBr/edit?usp=sharing&ouid=115037497538772428894&rtpof=true&sd=true"
                   className="text-gray-300 group hover:text-red-600"
                 >
                   <h2 className="invisible md:group-hover:visible md:group-hover:animate-bounce">
