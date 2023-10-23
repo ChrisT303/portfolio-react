@@ -27,10 +27,17 @@ const ParticlesBackground = ({ className }) => {
           number: { value: 10, density: { enable: true, value_area: 600 } },
           color: { value: "#ffffff" },
           shape: {
-            type: "square",
-            stroke: { width: 0, color: "#000000" },
-            polygon: { nb_sides: 5 },
+            type: ["circle", "square", "polygon", "star"], 
+            options: {
+              polygon: { nb_sides: 3 }, 
+              star: { nb_sides: 5, sides: 2.0 }  
+            },
+            stroke: {
+              width: 0,
+              color: "#000000"
+            }
           },
+          
           opacity: {
             value: 0.25,
             random: true,
