@@ -14,7 +14,7 @@ const ParticlesBackground = ({ className }) => {
   return (
     <Particles
       id="tsparticles"
-      className={`absolute w-full h-full top-0 left-0 z-0 ${className}`}
+      className={`fixed w-full h-full top-0 left-0 z-0 ${className}`}
       init={particlesInit}
       loaded={particlesLoaded}
 

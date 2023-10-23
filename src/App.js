@@ -1,4 +1,3 @@
-
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
@@ -9,16 +8,15 @@ import Work from "./components/Work";
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-
 const App = () => {
   return (
     <Router>
       <div className="relative w-full h-screen">
         {/* This will serve as your background */}
-        <ParticlesBackground className="absolute w-full h-full top-0 left-0 z-0" />
+        <ParticlesBackground />
         
         {/* Your main content */}
-        <div className="relative z-10">
+        <div className="relative z-10 h-full">
           <Navigation />
           <Routes>
             <Route path="/" element={<Hero />} />
@@ -33,8 +31,5 @@ const App = () => {
   );
 }
 
-
-
-
-
 export default App;
+
