@@ -43,10 +43,10 @@ const Hero = () => {
   return (
     <div className="w-full h-screen bg-eyes bg-cover bg-center">
       <div className="max-w-[1000px] mx-auto px-12 flex flex-col justify-center h-full">
-        <p className="text-white custom-outline text-2xl font-bold">
+        <p className="text-white custom-outline text-4xl md:text-3xl font-bold">
           {nameDisplay}
         </p>
-        <h2 className="text-3xl sm:text-7xl font-bold text-[#30D5C8] text-opacity-80">
+        <h2 className=" text-5xl md:text-7xl  font-bold text-[#30D5C8] text-opacity-80">
           {developerText}
         </h2>
 
@@ -58,7 +58,7 @@ const Hero = () => {
           className={`relative group transition-opacity duration-500 ${showLogos ? 'opacity-100' : 'opacity-0'}`} 
           style={{ transitionDelay: `${showLogos ? index * 100 : 0}ms` }}  // Staggered reveal for each logo
         >
-          <img src={logo.src} alt={logo.alt} className="h-12 md:h-16 w-auto" />
+          <img src={logo.src} alt={logo.alt} className="h-9 md:h-16 w-auto" />
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 bg-black text-white text-xs px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition">
             {logo.hoverContent}
           </div>
