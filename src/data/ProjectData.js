@@ -1,4 +1,4 @@
-import Libro from '../assets/Libro3.png'
+import Libro from '../assets/libro4.png'
 import JobJot from '../assets/JobJotSS.png'
 import Bored from '../assets/bored2.png'
 
