@@ -32,7 +32,7 @@ const Work = () => {
           {applications.map((app) => (
             <div key={app.key} className="project-card" onClick={() => toggleProject(app.key)}>
               <div className="text-center">
-              <img className="project-image h-60 sm:h-80 md:h-64 lg:h-96" src={app.src} alt={app.name} />
+              <img className="project-image h-48 sm:h-80 md:h-64 lg:h-96" src={app.src} alt={app.name} />
               </div>
               <div className={`overlay ${selectedProject === app.key ? 'show' : ''}`}>
                 <h2 className="font-bold text-center mb-4">{app.name}</h2>
