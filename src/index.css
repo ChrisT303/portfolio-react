@@ -272,6 +272,20 @@ a.info:hover {
   min-height: 100vh;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text-white {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+
 
 
 @media (min-width: 768px) {
