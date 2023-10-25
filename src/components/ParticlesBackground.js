@@ -21,23 +21,25 @@ const ParticlesBackground = ({ className }) => {
       options={{
         fullScreen: false,
         background: {
-          image: " linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)",
+          image: "linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)",
         },
         particles: {
-          number: { value: 10, density: { enable: true, value_area: 600 } },
+          number: {
+            value: window.innerWidth < 480 ? 5 : 10,
+            density: { enable: true, value_area: 600 }
+          },
           color: { value: "#ffffff" },
           shape: {
-            type: ["circle", "square", "polygon", "star"], 
+            type: ["circle", "square", "polygon", "star"],
             options: {
-              polygon: { nb_sides: 3 }, 
-              star: { nb_sides: 5, sides: 2.0 }  
+              polygon: { nb_sides: 3 },
+              star: { nb_sides: 5, sides: 2.0 }
             },
             stroke: {
               width: 0,
               color: "#000000"
-            }
+            },
           },
-          
           opacity: {
             value: 0.25,
             random: true,
@@ -49,17 +51,17 @@ const ParticlesBackground = ({ className }) => {
             anim: { enable: false, speed: 2, size_min: 0.1, sync: false },
           },
           line_linked: {
-            enable: false,
-            distance: 300,
+            enable: true,
+            distance: 150,
             color: "#ffffff",
-            opacity: 0,
-            width: 0,
+            opacity: 0.4,
+            width: 1,
           },
           move: {
             enable: true,
-            speed: 0.5,
-            direction: "top",
-            straight: true,
+            speed: 1,
+            direction: "none",
+            straight: false,
             out_mode: "out",
             bounce: false,
             attract: { enable: false, rotateX: 600, rotateY: 1200 },
@@ -68,8 +70,8 @@ const ParticlesBackground = ({ className }) => {
         interactivity: {
           detect_on: "canvas",
           events: {
-            onhover: { enable: false, mode: "repulse" },
-            onclick: { enable: false, mode: "push" },
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
             resize: true,
           },
           modes: {
@@ -93,3 +95,4 @@ const ParticlesBackground = ({ className }) => {
 };
 
 export default ParticlesBackground;
+
