@@ -1,45 +1,50 @@
-import React, { useState } from "react";
-import logos from "../data/LogoData";
+import React from "react";
 import Footer from "./Footer";
 
 const Experience = () => {
-  const [hoveringID, setIsHoveringID] = useState();
-
-  const handleMouseOver = (id) => {
-    setIsHoveringID(id);
-  };
-
-  const handleMouseOut = () => {
-    setIsHoveringID(false);
-  };
+  const skills = [
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Express.js",
+    "MongoDB",
+    "GraphQL",
+    "Web Application Development",
+    "User Interface Design",
+    "User Experience Design",
+    "Version Control",
+    "Problem-Solving",
+    "Team Collaboration",
+    "Agile/Scrum Methodology",
+    "Data Analysis",
+    "Software Testing and Debugging",
+    "Project Management",
+    "Sales and Client Relationship Management",
+    "Adaptability and Learning Agility"
+  ];
 
   return (
     <div className="w-full h-screen bg-eyes bg-cover bg-center text-white custom-outline">
-      <div className="max-w-[1000px] pt-[40px] mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] pt-[20px] sm:pt-[40px] mx-auto flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 bdr">Skills</p>
-          <p className="py-4">Technologies I have worked with</p>
+          <p className="text-3xl sm:text-4xl font-bold inline border-b-4 bdr">Skills</p>
+          <p className="py-2 sm:py-4">Technologies and skills I have experience with:</p>
         </div>
-        <div className="w-full space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-12 text-center py-8 justify-center">
-          {logos.map((logo) => (
-            <div
-              key={logo.id}
-              className="container shadow-none md:shadow-lg md:shadow-[#040c16] md:hover:scale-110 md:duration-1000 relative"
-              onMouseOver={() => handleMouseOver(logo.id)}
-              onMouseOut={handleMouseOut}
-            >
-              <img className="w-10 mx-auto md:w-40" src={logo.src} alt={logo.alt} />
-              <span className="tooltip">{logo.hoverContent}</span>
+        <div className="w-full space-y-1 sm:space-y-2 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-12 text-center py-4 sm:py-8 justify-center">
+          {skills.map((skill, index) => (
+            <div key={index} className="tag bg-gray-700 p-1 sm:p-2 rounded-full hover:bg-gray-600 text-xs sm:text-base">
+              {skill}
             </div>
           ))}
         </div>
-        <div className="w-full px-4 pl-[10%] md:pt-[10px]"></div>
         <Footer />
       </div>
     </div>
   );
+
 };
 
 export default Experience;
+
 
 
