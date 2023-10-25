@@ -1,6 +1,6 @@
 import Libro from '../assets/Libro3.png'
 import JobJot from '../assets/JobJotSS.png'
-import Bored from '../assets/bored.png'
+import Bored from '../assets/bored2.png'
 
 
 
