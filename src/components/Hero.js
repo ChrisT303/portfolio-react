@@ -58,7 +58,7 @@ const Hero = () => {
           className={`relative group transition-opacity duration-500 ${showLogos ? 'opacity-100' : 'opacity-0'}`} 
           style={{ transitionDelay: `${showLogos ? index * 100 : 0}ms` }}  // Staggered reveal for each logo
         >
-          <img src={logo.src} alt={logo.alt} className="h-9 md:h-16 w-auto" />
+          <img src={logo.src} alt={logo.alt} className="h-6 md:h-16 w-auto" />
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 bg-black text-white text-xs px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition">
             {logo.hoverContent}
           </div>
